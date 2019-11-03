@@ -1,51 +1,99 @@
+@import "nav.css";
+@import "components/card.css";
+
+:root {
+  --nav-width: 280px;
+  --secondary-accent: #BA9A40;
+  --secondary-accent-40perc: rgba(186, 154, 64, 0.4);
+  --off-white: #f0f0f0;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+}
+
+a {
+  color: var(--off-white);
 }
 
 body {
-  background-color: #0f0f0f;
+  background-color: #080808;
   color: #fdfdfd;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  text-align: center;
   display: flex;
 }
 
-#nav {
-  position: fixed;
-  width: 250px;
-  height: 100vh;
-  background-color: grey;
+#bg-hp-img {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
 }
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-left: var(--nav-width);
+  padding: 0 40px;
 }
 
 #logo-container {
   width: 100%;
   height: 600px;
-  display: flex;
-  justify-content: space-around;
+  display: inline-flex;
   align-items: center;
 }
 
 #logo-group {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
 }
 
 #logo-group img {
-  width: 200px;
-  height: 100px;
-  border: 1px solid grey;
-  margin-right: 100px;
+  width: 247px;
+  height: 134px;
+  margin-right: 180px;
 }
 
 #main-title-group {
-  text-align: left;
 }
 
+section {
+  width: 100%;
+}
+
+section p {
+  line-height: 28px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1em;
+}
+
+.underline, h1 span {
+  background-image: linear-gradient(120deg, var(--secondary-accent) 0%, var(--secondary-accent) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  font-size: inherit;
+  background-position: 0 95%;
+  transition: background-size 0.25s ease-in;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: normal;
+  padding-top: 12px;
+}
+
+h2 strong {
+  font-size: inherit;
+}

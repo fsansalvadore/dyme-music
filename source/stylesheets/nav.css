@@ -1,0 +1,44 @@
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--nav-width);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-links {
+  flex: 1;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#nav-links li {
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+#nav-btn-group {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#btn-quotation {
+  margin: 0 15%;
+  padding: 12px 20px;
+  border-radius: 40px;
+  border: 1px solid var(--secondary-accent);
+  color: var(--secondary-accent);
+}
+
+#btn-artist-collaboration {
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}

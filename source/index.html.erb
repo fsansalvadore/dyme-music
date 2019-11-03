@@ -1,9 +1,9 @@
-<!-- ---
-title: DYME | Design Your Music Event - Music Agency for Events
-description: DYME | Design Your Music Event - Music Agency for Events
---- -->
+---
+title: "DYME | Design Your Music Event - Music Agency for Events"
+description: "DYME | Design Your Music Event - Music Agency for Events"
+---
 <nav id="nav">
-  <div>
+  <div id="nav-links">
     <ul>
       <li>CHI SIAMO</li>
       <li>MATRIMONI</li>
@@ -12,27 +12,39 @@ description: DYME | Design Your Music Event - Music Agency for Events
       <li>CONTATTI</li>
     </ul>
   </div>
-  <div>
+  <div id="nav-btn-group">
     <a id="btn-quotation" href="#">RICHIEDI PREVENTIVO</a>
     <a id="btn-artist-collaboration" href="#">COLLABORA DA ARTISTA</a>
   </div>
 </nav>
-<main>
-  <div id="logo-container">
-    <div id="logo-group">
-      <img src="" alt="DYME Music Agency">
-      <div id="main-title-group">
-        <h1>Progetta la tua musica<br/>con noi</h1>
-        <h2>Siamo un team di <strong>musicisti professionisti</strong> capaci di trovare soluzioni musicali adatte ad ogni occasione.</h2>
+  <img id="bg-hp-img" src="/images/bg_violin.jpg" alt="Violino illuminato in acqua">
+  <main>
+    <div id="logo-container">
+      <div id="logo-group">
+        <img src="/images/logo_DYME_MusicAgency.png" alt="DYME Music Agency">
+        <div id="main-title-group">
+          <h1><span>Progetta la tua musica</span><br/><span>con noi</span></h1>
+          <h2>Siamo un team di <strong>musicisti professionisti</strong> capaci di <br>trovare soluzioni musicali adatte ad ogni occasione.</h2>
+        </div>
       </div>
     </div>
-  </div>
-  <section>
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa saepe autem tempore voluptatem, ducimus quasi sequi accusantium quaerat molestias, voluptates ullam beatae doloribus maiores quo voluptate similique soluta, esse praesentium officiis sint error possimus quos. Qui rerum nesciunt aperiam accusamus placeat labore id dolore praesentium quos amet eum fugiat doloremque nobis maiores cumque neque fugit hic dignissimos molestiae rem debitis deserunt, natus illo. Sequi similique, hic omnis deleniti amet itaque. Rerum, sunt laboriosam, culpa eligendi repudiandae esse perspiciatis quidem placeat rem. Iure nulla, sit perferendis. Pariatur provident quas assumenda expedita quam nesciunt fugit, ratione incidunt nobis, laborum dolorem, tempore!</p>
-    </div>
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa saepe autem tempore voluptatem, ducimus quasi sequi accusantium quaerat molestias, voluptates ullam beatae doloribus maiores quo voluptate similique soluta, esse praesentium officiis sint error possimus quos. Qui rerum nesciunt aperiam accusamus placeat labore id dolore praesentium quos amet eum fugiat doloremque nobis maiores cumque neque fugit hic dignissimos molestiae rem debitis deserunt, natus illo. Sequi similique, hic omnis deleniti amet itaque. Rerum, sunt laboriosam, culpa eligendi repudiandae esse perspiciatis quidem placeat rem. Iure nulla, sit perferendis. Pariatur provident quas assumenda expedita quam nesciunt fugit, ratione incidunt nobis, laborum dolorem, tempore!</p>
-    </div>
-  </section>
-</main>
+    <section>
+      <% 4.times do |card| %>
+      <div class="card-container-half">
+        <div id="card-matrimoni" class="card card-big" data-tilt data-tilt-perspective="2000">
+          <h3>MATRIMONI</h3>
+          <div class="card-list">
+            <ul>
+              <li><a href="#">CERIMONIA<span class="icon-arrow arrow-link"></span></a></li>
+              <li><a href="#">APERITIVO<span class="icon-arrow arrow-link"></span></a></li>
+              <li><a href="#">PARTY<span class="icon-arrow arrow-link"></span></a></li>
+            </ul>
+          </div>
+          <div class="icon-arrow arrow-card"></div>
+        </div>
+      </div>
+      <% end %>
+      <div>
+      </div>
+    </section>
+  </main>

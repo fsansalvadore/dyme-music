@@ -1,0 +1,108 @@
+.card-container-half {
+  position: relative;
+  width: 50%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  width: 90%;
+  margin: 0 5%;
+  height: 350px;
+  border-radius: 3px;
+  transform-style: preserve-3d;
+  background-image: url("/images/weddings_preview.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  position: relative;
+  font-size: 50px;
+  top: -30px;
+  left: -5%;
+  transform: translateZ(60px);
+}
+
+.card-list {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  transform: translateZ(20px);
+}
+
+.card-list li {
+  position: relative;
+  line-height: 60px;
+  width: 120px;
+  border-bottom: 1px solid var(--secondary-accent-40perc);
+}
+
+.card-list li:last-child {
+  border-bottom: none;
+}
+
+.card-list li a {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.card-list li a:hover {
+  color: var(--secondary-accent);
+}
+
+.icon-arrow {
+  position: absolute;
+  height: 1px;
+  background-color: var(--secondary-accent);
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+
+.icon-arrow::before {
+  content: '';
+  position: absolute;
+  right: 1px;
+  border-top: solid 1px var(--secondary-accent);
+  border-right: solid 1px var(--secondary-accent);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.arrow-link {
+  width: 15px;
+  right: 20px;
+}
+
+.arrow-link::before {
+  top: -4px;
+  width: 8px;
+  height: 8px;
+}
+
+.arrow-card {
+  width: 35px;
+  right: 50px;
+  bottom: 35px;
+}
+
+.arrow-card::before {
+  top: -6px;
+  width: 13px;
+  height: 13px;
+}
+
+.card-list li a:hover .arrow-link {
+  opacity: 1;
+  right: 0;
+}
+
+.card:hover .arrow-card {
+  opacity: 1;
+  right: 30px;
+}
+
+
+
