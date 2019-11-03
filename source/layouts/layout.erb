@@ -13,7 +13,25 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+  <nav id="nav">
+  <div id="nav-links">
+    <ul>
+      <li><a href="#">CHI SIAMO</a></li>
+      <li><a href="#">MATRIMONI</a></li>
+      <li><a href="#">EVENTI</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li><a href="#">CONTATTI</a></li>
+    </ul>
+  </div>
+  <div id="nav-btn-group">
+    <a id="btn-quotation" href="#">RICHIEDI PREVENTIVO</a>
+    <a id="btn-artist-collaboration" href="#">COLLABORA DA ARTISTA</a>
+  </div>
+</nav>
+  <img id="bg-hp-img" src="/images/bg_violin.jpg" alt="Violino illuminato in acqua">
+  <main>
     <%= yield %>
+  </main>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

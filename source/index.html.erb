@@ -2,49 +2,163 @@
 title: "DYME | Design Your Music Event - Music Agency for Events"
 description: "DYME | Design Your Music Event - Music Agency for Events"
 ---
-<nav id="nav">
-  <div id="nav-links">
-    <ul>
-      <li>CHI SIAMO</li>
-      <li>MATRIMONI</li>
-      <li>EVENTI</li>
-      <li>GALLERY</li>
-      <li>CONTATTI</li>
-    </ul>
-  </div>
-  <div id="nav-btn-group">
-    <a id="btn-quotation" href="#">RICHIEDI PREVENTIVO</a>
-    <a id="btn-artist-collaboration" href="#">COLLABORA DA ARTISTA</a>
-  </div>
-</nav>
-  <img id="bg-hp-img" src="/images/bg_violin.jpg" alt="Violino illuminato in acqua">
-  <main>
     <div id="logo-container">
       <div id="logo-group">
         <img src="/images/logo_DYME_MusicAgency.png" alt="DYME Music Agency">
         <div id="main-title-group">
-          <h1><span>Progetta la tua musica</span><br/><span>con noi</span></h1>
-          <h2>Siamo un team di <strong>musicisti professionisti</strong> capaci di <br>trovare soluzioni musicali adatte ad ogni occasione.</h2>
+          <h1><span> Progetta la tua musica </span><br/><span> con noi </span></h1>
+          <p>Siamo un team di <strong>musicisti professionisti</strong> capaci di <br>trovare soluzioni musicali adatte ad ogni occasione.</p>
         </div>
       </div>
     </div>
-    <section>
-      <% 4.times do |card| %>
-      <div class="card-container-half">
-        <div id="card-matrimoni" class="card card-big" data-tilt data-tilt-perspective="2000">
-          <h3>MATRIMONI</h3>
-          <div class="card-list">
-            <ul>
-              <li><a href="#">CERIMONIA<span class="icon-arrow arrow-link"></span></a></li>
-              <li><a href="#">APERITIVO<span class="icon-arrow arrow-link"></span></a></li>
-              <li><a href="#">PARTY<span class="icon-arrow arrow-link"></span></a></li>
-            </ul>
-          </div>
-          <div class="icon-arrow arrow-card"></div>
-        </div>
-      </div>
-      <% end %>
-      <div>
+    <section class="business-unit-section">
+        <%= partial(:'partials/card-big', :locals => {
+          :cardTitle => "MATRIMONI",
+          :id => "card-weddings",
+          :listItem1 => {
+            :text => "CERIMONIA",
+            :url => "#"
+          },
+          :listItem2 => {
+            :text => "APERITIVO",
+            :url => "#"
+          },
+          :listItem3 => {
+            :text => "PARTY",
+            :url => "#"
+          }
+        }) %>
+        <%= partial(:'partials/card-big', :locals => {
+          :cardTitle => "EVENTI",
+          :id => "card-events",
+          :listItem1 => {
+            :text => "COCKTAIL",
+            :url => "#"
+          },
+          :listItem2 => {
+            :text => "AZIENDALE",
+            :url => "#"
+          },
+          :listItem3 => {
+            :text => "ANNIVERSARIO",
+            :url => "#"
+          }
+        }) %>
+        <%= partial(:'partials/card-horiz', :locals => {
+          :cardTitle => "SERVIZI EXTRA",
+          :id => "card-extra-services",
+          :listItem1 => {
+            :text => "ANIMAZIONE BAMBINI",
+            :url => "#"
+          },
+          :listItem2 => {
+            :text => "IMPIANTI AUDIO",
+            :url => "#"
+          },
+          :listItem3 => {
+            :text => "IMPIANTI LUCI",
+            :url => "#"
+          }
+        }) %>
+    </section>
+    <section class="business-unit-section">
+      <!-- <img id="section-weddings" src="/images/bg_violin.jpg" alt="Violino illuminato in acqua"> -->
+      <h2><span class="underline">MATRIMONI</span></h2>
+      <p>State organizzando un <em>Matrimonio</em>? Sei romantica e sei alla ricerca del giusto <em>accompagnamento musicale</em> che ti accompagni all’altare? Sei un tipo energico e vuoi dare alla tua cerimonia un <em>tocco di vivacità</em>? Decidete insieme a noi <em>la musica piú adatta per il vostro giorno più importante</em>!</p>
+      <div class="card-container">
+        <%= partial(:'partials/card-single', :locals => {
+            :cardTitle => "CERIMONIA",
+            :id => "card-cerimony",
+            :bgImg => "/images/cerimonies_preview.jpg",
+            :text => "Rendi indimenticabile il tuo giorno più importante",
+            :url => "#"
+          }) %>
+        <%= partial(:'partials/card-single', :locals => {
+            :cardTitle => "APERITIVO",
+            :id => "card-aperitif",
+            :bgImg => "/images/aperitif_preview.jpg",
+            :text => "L’aperitivo merita la giusta colonna sonora",
+            :url => "#"
+          }) %>
+        <%= partial(:'partials/card-single', :locals => {
+            :cardTitle => "PARTY",
+            :id => "card-party",
+            :bgImg => "/images/party_preview.jpg",
+            :text => "Scatenati con i tuoi invitati",
+            :url => "#"
+          }) %>
       </div>
     </section>
-  </main>
+    <section>
+      <!-- <img id="section-weddings" src="/images/bg_violin.jpg" alt="Violino illuminato in acqua"> -->
+      <h2><span class="underline">EVENTI</span></h2>
+      <p>Stai organizzando un <em>Evento</em>?<br>
+      La scelta dell’intrattenimento musicale è ciò che fa la differenza, affida il tuo evento a DYME MUSIC!
+      </p>
+      <div class="card-container">
+        <%= partial(:'partials/card-single', :locals => {
+            :cardTitle => "COCKTAIL",
+            :id => "card-cocktail",
+            :bgImg => "/images/cocktail_preview.jpg",
+            :text => "Personalizza il tuo cocktail con la musica più adatta",
+            :url => "#"
+          }) %>
+        <%= partial(:'partials/card-single', :locals => {
+            :cardTitle => "AZIENDALE",
+            :id => "card-business",
+            :bgImg => "/images/business_preview.jpg",
+            :text => "Stupisci tutti con la giusta musica",
+            :url => "#"
+          }) %>
+        <%= partial(:'partials/card-single', :locals => {
+            :cardTitle => "ANNIVERSARIO",
+            :id => "card-anniversary",
+            :bgImg => "/images/anniversary_preview.jpg",
+            :text => "Rendi memorabile un giorno importante",
+            :url => "#"
+          }) %>
+      </div>
+    </section>
+    <section>
+      <h2><span class="underline">GALLERY</span></h2>
+      <p>La musica è un libro che puoi leggere anche a occhi chiusi.</p>
+      <div class="gallery-container">
+
+      </div>
+    </section>
+    <section id="chi-siamo">
+      <h2><span class="underline">CHI SIAMO</span></h2>
+      <p>Un team di artisti, curiosi, creativi e entusiasti, determinato a migliorare la qualità dell’intrattenimento del tuo evento, rendendo finalmente semplice ed economica la scelta della musica!</p>
+    </section>
+    <section id="contacts">
+      <h2><span class="underline">CONTATTI</span></h2>
+      <div>
+        <ul>
+          <li><a href="#"><img src="#" alt=""></a></li>
+          <li><a href="#"><img src="#" alt=""></a></li>
+          <li><a href="#"><img src="#" alt=""></a></li>
+          <li><a href="#"><img src="#" alt=""></a></li>
+        </ul>
+        <a href="">dyme.music@gmail.com <div class="icon-arrow arrow-card"></div></a>
+      </div>
+      <div class="card-container">
+        <% 2.times do %>
+        <%= partial(:'partials/card-big', :locals => {
+          :cardTitle => "MATRIMONI",
+          :id => "card-weddings",
+          :listItem1 => {
+            :text => "CERIMONIA",
+            :url => "#"
+          },
+          :listItem2 => {
+            :text => "APERITIVO",
+            :url => "#"
+          },
+          :listItem3 => {
+            :text => "PARTY",
+            :url => "#"
+          }
+        }) %>
+        <% end %>
+      </div>
+    </section>

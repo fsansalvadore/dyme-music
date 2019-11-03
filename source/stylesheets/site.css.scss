@@ -1,4 +1,4 @@
-@import "nav.css";
+@import "components/nav.css";
 @import "components/card.css";
 
 :root {
@@ -6,6 +6,7 @@
   --secondary-accent: #BA9A40;
   --secondary-accent-40perc: rgba(186, 154, 64, 0.4);
   --off-white: #f0f0f0;
+  --off-black: #080808;
 }
 
 * {
@@ -24,8 +25,8 @@ a {
 }
 
 body {
-  background-color: #080808;
-  color: #fdfdfd;
+  background-color: var(--off-black);
+  color: var(--off-white);
   display: flex;
 }
 
@@ -67,6 +68,7 @@ main {
 
 section {
   width: 100%;
+  margin-bottom: 150px;
 }
 
 section p {
@@ -84,16 +86,62 @@ h1 {
   background-size: 100% 0.3em;
   font-size: inherit;
   background-position: 0 95%;
+  padding: 0 10px;
+  left: -10px;
   transition: background-size 0.25s ease-in;
 }
 
-h2 {
+h1 + p {
   font-size: 24px;
   line-height: 35px;
   font-weight: normal;
   padding-top: 12px;
 }
 
-h2 strong {
+strong, em {
   font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h2 + p {
+  padding: 0 80px 0 20px;
+  margin: 30px 20px 50px 0;
+  font-size: 24px;
+  line-height: 1.6rem;
+}
+
+#chi-siamo h2 + p {
+  padding: 0 30px;
+  width: 700px;
+  margin: 30px 0 50px 0;
+}
+
+.gallery-container{
+  height: 500px;
+}
+
+.gallery-container:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 1px;
+  border-right: 1px solid var(--secondary-accent);
+}
+
+#chi-siamo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }

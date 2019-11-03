@@ -1,1 +1,108 @@
-nav.css
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--nav-width);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-links {
+  flex: 1;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#nav-links li {
+  width: 200px;
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+#nav-links li a {
+  padding: 12px 30px 12px 0;
+  transition: color 0.1s ease;
+}
+
+#nav-links li a:hover {
+  color: var(--secondary-accent);
+}
+
+#nav-btn-group {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#btn-quotation {
+  margin: 0 15%;
+  padding: 12px 20px;
+  border-radius: 40px;
+  border: 1px solid var(--secondary-accent);
+  color: var(--secondary-accent);
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-quotation::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid var(--secondary-accent-40perc);
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 4s infinite;
+  -webkit-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+#btn-quotation:hover {
+  background-color: var(--secondary-accent);
+  color: var(--off-black);
+  bottom: 5px;
+}
+
+#btn-quotation:hover::after, #btn-quotation:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#btn-artist-collaboration {
+  margin-top: 18px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.1s ease;
+}
+
+#btn-artist-collaboration:hover {
+  color: var(--secondary-accent);
+}
