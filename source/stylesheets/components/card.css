@@ -107,6 +107,11 @@
   transform: translateZ(20px);
 }
 
+.card-contact h3, .card-single h3 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
 .card-vert .card-list li {
   position: relative;
   line-height: 60px;
@@ -233,4 +238,25 @@
   padding: 12px 50px;
   bottom: 3px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.card-contact-phone {
+  position: absolute;
+  right: 12px;
+  bottom: -50px;
+  font-size: 25px;
+  color: var(--secondary-accent);
+  display: flex;
+  align-items: center;
+}
+
+.contact-phone-circle {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--secondary-accent);
+  border-radius: 50%;
+  margin-right: 12px;
 }

@@ -1,5 +1,6 @@
 @import "components/nav.css";
 @import "components/card.css";
+@import "components/footer.css";
 
 :root {
   --nav-width: 280px;
@@ -41,8 +42,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  margin-left: var(--nav-width);
-  padding: 0 40px;
+  padding-left: var(--nav-width);
 }
 
 #logo-container {
@@ -63,12 +63,10 @@ main {
   margin-right: 180px;
 }
 
-#main-title-group {
-}
-
 section {
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
+  padding: 0 40px;
 }
 
 section p {
@@ -117,6 +115,30 @@ h2 + p {
   line-height: 1.6rem;
 }
 
+#weddings .bg-section-img, #events .bg-section-img {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top: -200px;
+  z-index: -99;
+  background-size: cover;
+  background-position: center;
+}
+
+#weddings .bg-section-img {
+  background-image:
+  linear-gradient(to bottom, var(--off-black) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--off-black) 100%),
+  linear-gradient(to right, var(--off-black) 0%, rgba(0,0,0,0) 20%),
+url("/images/weddings_bg.jpg");
+}
+
+#events .bg-section-img {
+  background-image:
+  linear-gradient(to bottom, var(--off-black) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--off-black) 100%),
+  linear-gradient(to right, var(--off-black) 0%, rgba(0,0,0,0) 20%),
+url("/images/events_bg.jpg");
+}
+
 #chi-siamo h2 + p {
   padding: 0 30px;
   width: 700px;
@@ -142,6 +164,106 @@ h2 + p {
 #chi-siamo {
   display: flex;
   flex-direction: column;
+  height: 550px;
+  background-image:
+  linear-gradient(to bottom, var(--off-black) 0%, rgba(0,0,0,0) 50%),
+  linear-gradient(to right, var(--off-black) 0%, rgba(0,0,0,0) 20%),
+  url("/images/map.jpg");
+  background-size: cover;
+  background-position: bottom;
   text-align: center;
   align-items: center;
+  box-sizing: content-box;
+}
+
+#map {
+  position: absolute;
+  right: -40px;
+  left: -40px;
+  width: 100%;
+  z-index: -90;
+}
+
+#social-contacts {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 26;
+}
+
+.social-btns a {
+  display: inline-flex;
+  list-style: none;
+  margin-right:20px;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.1s ease;
+}
+
+.social-btns a:hover {
+  transform: scale(1.1);
+  border: 2px solid var(--secondary-accent);
+}
+
+.social-btns a:nth-of-type(1) {
+  background-color: #3a589b;
+}
+
+.social-btns a:nth-of-type(2) {
+  border-radius: 50%;
+  background-image: linear-gradient( 36deg, rgb(204,85,0) 0%, rgb(230,0,184) 100%);
+  background-image: -moz-linear-gradient( 36deg, rgb(204,85,0) 0%, rgb(230,0,184) 100%);
+  background-image: -webkit-linear-gradient( 36deg, rgb(204,85,0) 0%, rgb(230,0,184) 100%);
+  background-image: -ms-linear-gradient( 36deg, rgb(204,85,0) 0%, rgb(230,0,184) 100%);
+}
+
+.social-btns a:nth-of-type(3) {
+  background-color: #f76c6f;
+}
+
+.social-btns a:nth-of-type(4) {
+  background-color: #007ab9;
+}
+
+.social-btns a img {
+  width: 20px;
+  height: 20px;
+}
+
+#social-contacts .email-link {
+  padding: 12px 50px 12px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.email-link:hover {
+  color: var(--secondary-accent);
+}
+
+#social-contacts a .icon-arrow {
+  opacity: 1;
+  right: 0;
+}
+
+#awards {
+  margin-bottom: 0;
+}
+
+#awards-divider {
+  border-top: 1px solid var(--secondary-accent);
+  border-bottom: 0;
+}
+
+.badge-container {
+  margin: 115px 0;
+}
+
+.badge-container img {
+  margin-right: 115px;
+  height: 115px;
+  width: auto;
 }
