@@ -1,6 +1,7 @@
 @import "components/nav.css";
 @import "components/card.css";
 @import "components/footer.css";
+@import "./events-page.css";
 
 :root {
   --nav-width: 280px;
@@ -42,7 +43,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  padding-left: var(--nav-width);
+  margin-left: var(--nav-width);
 }
 
 #logo-container {

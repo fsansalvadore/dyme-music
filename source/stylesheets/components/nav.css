@@ -40,13 +40,16 @@
   text-align: center;
 }
 
-#btn-quotation {
-  margin: 0 15%;
+#btn-quotation, .btn-quotation-secondary {
   padding: 12px 20px;
   border-radius: 40px;
-  border: 1px solid var(--secondary-accent);
-  color: var(--secondary-accent);
   transition: all 0.3s ease-in-out;
+}
+
+#btn-quotation {
+  margin: 0 15%;
+  color: var(--secondary-accent);
+  border: 1px solid var(--secondary-accent);
 }
 
 #btn-quotation::after {
