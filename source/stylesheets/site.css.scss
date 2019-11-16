@@ -1,5 +1,7 @@
 @import "components/nav.css";
 @import "components/card.css";
+@import "components/formation-section.css";
+@import "components/contact-section.css";
 @import "components/footer.css";
 @import "./events-page.css";
 
@@ -19,7 +21,6 @@
   font-size: 20px;
   text-decoration: none;
   list-style: none;
-  position: relative;
 }
 
 a {
@@ -64,9 +65,13 @@ main {
   margin-right: 180px;
 }
 
+section, .formation-section {
+  margin-bottom: 60px;
+  position: relative;
+}
+
 section {
   width: 100%;
-  margin-bottom: 120px;
   padding: 0 40px;
 }
 
@@ -116,7 +121,10 @@ h2 + p {
   line-height: 1.6rem;
 }
 
-#weddings .bg-section-img, #events .bg-section-img {
+#weddings .bg-section-img,
+#events .bg-section-img,
+#cerimony-formation .bg-section-img,
+#cerimony-alternatives .bg-section-img {
   position: absolute;
   width: 100%;
   height: 600px;

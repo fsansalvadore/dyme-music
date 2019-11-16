@@ -10,11 +10,23 @@
 
 .top-page-btns {
   width: 100%;
+  position: relative;
+  z-index: 999;
   display: flex;
   margin-top: 37px;
   height: 60px;
   align-items: center;
-  padding: 0 80px;
+}
+
+.return-btn {
+  position: relative;
+  margin-left: 40px;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 15px 50px;
 }
 
 .btn-quotation-secondary {
@@ -28,17 +40,17 @@
 .left-arrow {
   position: absolute;
   height: 1px;
-  background-color: var(--secondary-accent);
-  opacity: 0;
+  left: 0;
+  background-color: var(--off-white);
   transition: all 0.25s ease;
 }
 
 .left-arrow::before {
   content: '';
   position: absolute;
-  right: 1px;
-  border-top: solid 1px var(--secondary-accent);
-  border-right: solid 1px var(--secondary-accent);
+  left: 1px;
+  border-bottom: solid 1px var(--off-white);
+  border-left: solid 1px var(--off-white);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -82,4 +94,69 @@
 
 .page-title p {
   font-size: 30px;
+}
+
+.page-intro-text {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.page-paragraph em {
+  color: var(--secondary-accent);
+  font-style: normal;
+}
+
+#classics-card-cerimony {
+  z-index: 100;
+  background-image: url("/images/cerimony_img_classics.jpg");
+}
+
+.song-list {
+  padding-top: 40px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.song-list ul {
+  width: 50%;
+  line-height: 1.6rem;
+  padding: 0 20px;
+}
+
+.song-list li::before {
+  content: '';
+  padding: 5px;
+  margin-right: 6px;
+  background-image: url("/images/note.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.par {
+  margin-top: 20px !important;
+}
+
+#cerimony-formation {
+  padding-top: 30px;
+}
+
+#cerimony-formation .bg-section-img {
+  top: -400px !important;
+  background-image:
+  linear-gradient(to bottom, var(--off-black) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--off-black) 100%),
+  linear-gradient(to right, var(--off-black) 0%, rgba(0,0,0,0) 20%),
+url("/images/cerimony_formation.jpg");
+}
+
+#cerimony-alternatives .bg-section-img {
+  background-image:
+  linear-gradient(to bottom, var(--off-black) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--off-black) 100%),
+  linear-gradient(to right, var(--off-black) 0%, rgba(0,0,0,0) 20%),
+url("/images/cerimony_alternatives.jpg");
 }

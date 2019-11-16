@@ -1,0 +1,29 @@
+.contact-container {
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, rgb(153, 129, 61) 0, var(--secondary-accent) 100%);
+}
+
+.contact-container h4 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.btn-quotation-secondary-arrow {
+  background-color: var(--off-white);
+  color: var(--off-black);
+  display: flex;
+  align-items: center;
+  padding: 15px 50px 15px 20px;
+  position: relative;
+}
+.btn-quotation-secondary-arrow:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-quotation-secondary-arrow .icon-arrow {
+  opacity: 1;
+}

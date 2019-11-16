@@ -2,22 +2,113 @@
 title: "DYME | Design Your Music Event - Music Agency for Events"
 description: "DYME | Design Your Music Event - Music Agency for Events"
 ---
-<div id="page-header-bg"
-style="background-image: linear-gradient(to top, var(--off-black) 0, rgba(0,0,0,0) 100%),
- url('/images/ceremony_header.jpg');">
-  <div class="top-page-btns">
-    <div class="return-btn">
-      <a href="" class="email-link"><div class="left-arrow arrow-card"></div> TORNA ALLA HOME PAGE</a>
+<%= partial(:'partials/page-header', :locals => {
+  :h1 => "CERIMONIA",
+  :category => "MATRIMONI",
+  :subheadline => "Rendi indimenticabile il tuo giorno più importante",
+  :img_url => "/images/ceremony_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>
+    La musica per il rito, religioso e civile, ha un grandissimo potere evocativo, ed è fondamentale individuare quella giusta. 
+    </p>
+    <br>
+    <p>
+    Il grande giorno è arrivato. Splendenti nel vostro abito da sposa, finalmente fate il vostro ingresso. Passo dopo passo, avanzate con le vostre elegantissime scarpe verso la vostra anima gemella che vi attende all’altare, facendo il possibile per trattenere le lacrime.
+    </p>
+    <br>
+    <p>
+  Ad accrescere l’emotività del momento, <em>la musica di sottofondo</em>.  Ecco alcuni brani adatti ad accompagnarvi in uno dei momenti più emozionanti della vostra vita, quello del “sì”.</p>"
+}) %>
+<section class="page-article-text page-paragraph">
+  <div class="card-container-horiz">
+    <div id="classics-card-cerimony" class="card card-horiz card-big" data-tilt data-tilt-perspective="6000">
+      <h3>I classici senza tempo</h3>
     </div>
-    <a class="btn-quotation-secondary" href="#">RICHIEDI PREVENTIVO</a>
   </div>
-  <div class="page-title-container">
-    <div class="page-category">
-      <p>DYME</p><p>MATRIMONI</p>
+  <p>
+    Ci sono alcuni brani intramontabili, quelli che ogni volta ci fanno pensare ad altari ricolmi di fiori e ad abiti da sposa in pizzo. Si tratta sovente di <em>musiche scritte da grandi compositori di musica classica</em> che da sempre vengono associate al matrimonio e che sono state spesso utilizzate come colonna sonora di celebri film. Sono brani ideali per <em>ogni momento della cerimonia</em>, soprattutto per l’ingresso della sposa, lo scambio degli anelli, il momento della comunione e l’uscita degli sposi. Ecco i più richiesti:</p>
+    <div class="song-list">
+      <ul>
+        <li>Wedding March (Lohengrin) – Richard Wagner </li>
+        <li>Marcia Nuziale – Felix Mendelssohn</li>
+        <li>Canon in D – Johann Pachelbel</li>
+        <li>Hallelujah – Leonard Cohen</li>
+        <li>Aria sulla quarta corda – Johann Sebastian Bach</li>
+        <li>Panis Angelicus, Op.12 – César Franck</li>
+      </ul>
+      <ul>
+        <li>Ave Maria – Franz Schubert</li>
+        <li>Alleluia, Z. S14 – Henry Purcell</li>
+        <li>Fratello Sole, Sorella Luna –Riz Ortolani</li>
+        <li>Laudate Dominum – Wolfgang Amadeus Mozart</li>
+        <li>Lascia ch’io pianga – George Frideric Handel</li>
+      </ul>
     </div>
-    <div class="page-title">
-      <h1><span class="underline">CERIMONIA</span></h1>
-      <p>Rendi indimenticabile il tuo giorno più importante</p>
+</section>
+<section id="cerimony-formation" class="page-article-text page-paragraph">
+  <div class="bg-section-img"></div>
+  <div class="card-container-horiz">
+  <h3>Quale formazione scegliere</h3>
+  <p>
+    Le possibilità sono tante, con <em>Cantante</em> o senza, e in genere gli strumenti più quotati sono <em>il Violino, il Flauto, il Pianoforte o l’Arpa</em>, ma anche <em>il Trio e il Quartetto d’archi</em> sono adatti all’occasione. Questa scelta renderà la cerimonia ancora più <em>principesca e indimenticabile</em>. Anche se tutti i brani possono essere arrangiato per i diversi ensemble, ce ne sono alcuni che, secondo noi, sono particolarmente efficaci:</p>
+    <div class="song-list">
+      <ul>
+        <li>Arioso, Adagio in G for 4 Cellos, BWV 156 – Johann Sebastian
+      Bach</li>
+        <li>Primavera – Antonio Vivaldn</li>
+        <li>Canon in D – Johann Pachelbel</li>
+        <li>Méditation de Thaïs – Jules Massenet</li>
+      </ul>
+      <ul>
+        <li>Adagio in Sol Minore – Tomaso Albinoni</li>
+        <li>Inno alla gioia – Ludwig Van Beethoven</li>
+      </ul>
     </div>
+</section>
+<section id="cerimony-alternatives" class="page-article-text page-paragraph">
+  <div class="bg-section-img"></div>
+  <div class="card-container-horiz">
+  <h3>Altre alternative</h3>
+  <p>
+    Un’originale alternativa è Il gospel, una musica solitamente religiosa, nata nelle chiese afroamericane nel XVIII secolo e il cui <em>ritmo coinvolgente</em> può dare un <em>tocco frizzante</em> e <em>allegro</em> al vostro matrimonio. Se siete intenzionati ad avere un repertorio piú gospel, vi consiglieremo al meglio sui brani (alcuni dei quali vi saranno familiari grazie al film “Sister Act”).
+Vi sfidiamo a non muovere il vostro bouquet di fiori a ritmo di musica!
+<br></p>
+<p>Ecco una breve lista:</p>
+    <div class="song-list">
+      <ul>
+        <li>Oh Happy Day – The Edwin Haekins Singers</li>
+        <li>I Will Follow Him –Little Peggy March</li>
+        <li>When God Made You – Daywind</li>
+        <li>Méditation de Thaïs – Jules Massenet</li>
+      </ul>
+      <ul>
+        <li>Hail, Holy Queen – New Sisters Gospel Choir</li>
+        <li>Joyful Joyful – ACM Gospel Choir</li>
+        <li>My life, my love, my all – The Gospel House</li>
+      </ul>
+    </div>
+    <div class="par">
+      <p>La selezione della musica per la <em>cerimonia</em> non è scontata, e richiede la giusta attenzione. È importante che i brani scelti abbiano una valenza <em>emotiva</em> per l’occasione e che si adeguino alle eventuali letture selezionate. Tuttavia, le musiche devono incontrare anche i vostri gusti, proprio come per tutti gli altri dettagli: dalla decorazione della location alle partecipazioni del matrimonio, passando per i fiori in chiesa, i centrotavola e il bouquet della sposa.</p><br>
+      <p>Il valore aggiunto di DYME, oltre l’alta professionalità, è la <em>personalizzazione</em> e la vera e propria <em>consulenza musicale</em> offerta a wedding planners e ai futuri sposi nella creazione della perfetta colonna sonora nel loro giorno più importante.</p>
   </div>
-</div>
+</section>
+<%= partial(:'partials/formation-section', :locals => {
+  :list_a => {
+    :a1 => "PIANOFORTE SOLO",
+    :a2 => "PIANOFORTE E VIOLINO",
+    :a3 => "ARPA E VIOLINO",
+    :a4 => "PIANOFORTE E VOCE",
+    :a5 => "DUO/TRIO JAZZ",
+    :a6 => "TRIO PIANOFORTE VIOLINO E VOCE"
+  },
+  :list_b => {
+    :b1 => "TRIO D’ARCHI",
+    :b2 => "QUARTETTO D’ARCHI",
+    :b3 => "PIANOBAR",
+    :b4 => "DJ-SET",
+    :b5 => "DJ-SET CON VOCALIST",
+    :b6 => "PARTY BAND"
+  }
+}) %>
+<%= partial(:'partials/contact-section') %>
