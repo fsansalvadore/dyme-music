@@ -1,0 +1,34 @@
+---
+title: "Extra Services | DYME Music Agency"
+description: "DYME | Design Your Music Event - Music Agency for Events"
+---
+<%= partial(:'partials/page-header', :locals => {
+  :h1 => "SERVIZI EXTRA",
+  :category => "EXTRA",
+  :subheadline => "Rendi memorabile un giorno importante",
+  :img_url => "/images/extra-services_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>
+Passione, creatività ed eleganza sono gli elementi che portano DYME a rendere il vostro giorno indimenticabile. Se desiderate un DJ set o una Party Band con <em>Impianto Audio e Luci</em> professionali in grado di trasformare le scene del vostro matrimonio in ambienti unici e indimenticabili, DYME è proprio ciò che fa per voi.
+<br><br>
+Uno <em>staff creativo e con esperienza</em> collaborerà con voi affinché tutto venga allestito come lo avete sempre desiderato.
+</p>
+    <br>
+    <p>
+DYME mette a vostra disposizione numerosi altri servizi.  State pensando ad un Pianoforte a Coda per il vostro evento? Avete bisogno di un’<em>Animatrice</em> che si occupi dei bambini durante la giornata? Dyme offre questi servizi per accontentare i vostri desideri.
+</p>"
+}) %>
+<%= partial(:'partials/formation-section', :locals => {
+  :title => "Altri servizi",
+  :list_a => {
+    :a1 => "IMPIANI DI AMPLIFICAZIONE AUDIO",
+    :a2 => "ILLUMINAZIONE PER SPETTACOLI E DISCO",
+    :a3 => "PIANOFORTE VERTICALE"
+  },
+  :list_b => {
+    :b1 => "PIANOFORTE A CODA",
+    :b2 => "ANIMAZIONE BAMBINI"
+  }
+}) %>
+<%= partial(:'partials/contact-section') %>

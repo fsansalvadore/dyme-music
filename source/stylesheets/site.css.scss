@@ -249,6 +249,10 @@ url("/images/events_bg.jpg");
   align-items: center;
 }
 
+.email-link {
+  position: relative;
+}
+
 .email-link:hover {
   color: var(--secondary-accent);
 }

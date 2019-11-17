@@ -1,0 +1,47 @@
+---
+title: "Aziendale | Eventi | DYME Music Agency"
+description: "Stupisci tutti con la giusta musica."
+---
+<%= partial(:'partials/page-header', :locals => {
+  :h1 => "AZIENDALE",
+  :category => "EVENTI",
+  :subheadline => "Stupisci tutti con la giusta musica",
+  :img_url => "/images/business_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>
+La cura dei dettagli e la qualità sono il nostro biglietto da visita in fatto di <em>musica per eventi aziendali</em>. Con anni di esperienza nel settore alle spalle, progettiamo e gestiamo a 360° l’evento per i nostri clienti.
+<br><br>
+Meeting, conferenze, riunioni aziendali, team building, fiere, il lancio di un nuovo prodotto, sono tutti appuntamenti importanti per la comunicazione d’azienda. Occasioni in cui <em>la musica non può mancare</em>.
+</p>
+    <p>
+Ogni particolare viene curato da noi per permettervi di non pensare a nulla. La nostra serietà e professionalità è a vostra disposizione per:
+<br><br>
+<ul>
+  <li><em>Gestione</em> della musica e dei musicisti</li>
+  <li>Studio della <em>soluzione musicale</em> più adatta all’evento</li>
+  <li>Studio della luce e <em>installazioni luminose</em></li>
+  <li>Amplificazione e gestione del suono</li>
+  <li>Noleggio <em>impianti audio</em></li>
+</ul>
+</p>"
+}) %>
+<%= partial(:'partials/formation-section', :locals => {
+  :title => "Formazione",
+  :list_a => {
+    :a1 => "PIANOFORTE SOLO",
+    :a2 => "PIANOFORTE E VIOLINO",
+    :a3 => "ARPA E VIOLINO",
+    :a4 => "PIANOFORTE E VOCE",
+    :a5 => "DUO/TRIO JAZZ",
+    :a6 => "TRIO PIANOFORTE VIOLINO E VOCE"
+  },
+  :list_b => {
+    :b1 => "TRIO D’ARCHI",
+    :b2 => "QUARTETTO D’ARCHI",
+    :b3 => "PIANOBAR",
+    :b4 => "DJ-SET",
+    :b5 => "DJ-SET CON VOCALIST"
+  }
+}) %>
+<%= partial(:'partials/contact-section') %>

@@ -15,33 +15,35 @@ description: "DYME | Design Your Music Event - Music Agency for Events"
         <%= partial(:'partials/card-big', :locals => {
           :cardTitle => "MATRIMONI",
           :id => "card-weddings",
+          :ancorUrl => "#weddings",
           :listItem1 => {
             :text => "CERIMONIA",
-            :url => "#"
+            :url => "/weddings/cerimonia.html"
           },
           :listItem2 => {
             :text => "APERITIVO",
-            :url => "#"
+            :url => "/weddings/aperitivo.html"
           },
           :listItem3 => {
             :text => "PARTY",
-            :url => "#"
+            :url => "/weddings/party.html"
           }
         }) %>
         <%= partial(:'partials/card-big', :locals => {
           :cardTitle => "EVENTI",
           :id => "card-events",
+          :ancorUrl => "#events",
           :listItem1 => {
             :text => "COCKTAIL",
-            :url => "#"
+            :url => "/events/cocktail.html"
           },
           :listItem2 => {
             :text => "AZIENDALE",
-            :url => "#"
+            :url => "/events/aziendale.html"
           },
           :listItem3 => {
             :text => "ANNIVERSARIO",
-            :url => "#"
+            :url => "/events/anniversario.html"
           }
         }) %>
         <%= partial(:'partials/card-horiz', :locals => {
@@ -49,15 +51,15 @@ description: "DYME | Design Your Music Event - Music Agency for Events"
           :id => "card-extra-services",
           :listItem1 => {
             :text => "ANIMAZIONE BAMBINI",
-            :url => "#"
+            :url => "/extra-services/index.html"
           },
           :listItem2 => {
             :text => "IMPIANTI AUDIO",
-            :url => "#"
+            :url => "/extra-services/index.html"
           },
           :listItem3 => {
             :text => "IMPIANTI LUCI",
-            :url => "#"
+            :url => "/extra-services/index.html"
           }
         }) %>
     </section>
@@ -71,21 +73,21 @@ description: "DYME | Design Your Music Event - Music Agency for Events"
             :id => "card-cerimony",
             :bgImg => "/images/cerimonies_preview.jpg",
             :text => "Rendi indimenticabile il tuo giorno più importante",
-            :url => "#"
+            :url => "/weddings/cerimonia.html"
           }) %>
         <%= partial(:'partials/card-single', :locals => {
             :cardTitle => "APERITIVO",
             :id => "card-aperitif",
             :bgImg => "/images/aperitif_preview.jpg",
             :text => "L’aperitivo merita la giusta colonna sonora",
-            :url => "#"
+            :url => "/weddings/aperitivo.html"
           }) %>
         <%= partial(:'partials/card-single', :locals => {
             :cardTitle => "PARTY",
             :id => "card-party",
             :bgImg => "/images/party_preview.jpg",
             :text => "Scatenati con i tuoi invitati",
-            :url => "#"
+            :url => "/weddings/party.html"
           }) %>
       </div>
     </section>
@@ -101,25 +103,25 @@ description: "DYME | Design Your Music Event - Music Agency for Events"
             :id => "card-cocktail",
             :bgImg => "/images/cocktail_preview.jpg",
             :text => "Personalizza il tuo cocktail con la musica più adatta",
-            :url => "#"
+            :url => "/events/cocktail.html"
           }) %>
         <%= partial(:'partials/card-single', :locals => {
             :cardTitle => "AZIENDALE",
             :id => "card-business",
             :bgImg => "/images/business_preview.jpg",
             :text => "Stupisci tutti con la giusta musica",
-            :url => "#"
+            :url => "/events/aziendale.html"
           }) %>
         <%= partial(:'partials/card-single', :locals => {
             :cardTitle => "ANNIVERSARIO",
             :id => "card-anniversary",
             :bgImg => "/images/anniversary_preview.jpg",
             :text => "Rendi memorabile un giorno importante",
-            :url => "#"
+            :url => "/events/anniversario.html"
           }) %>
       </div>
     </section>
-    <section>
+    <section id="gallery">
       <h2><span class="underline">GALLERY</span></h2>
       <p>La musica è un libro che puoi leggere anche a occhi chiusi.</p>
       <div class="gallery-container">
@@ -135,12 +137,12 @@ description: "DYME | Design Your Music Event - Music Agency for Events"
       <h2><span class="underline">CONTATTI</span></h2>
       <div id="social-contacts">
         <div class="social-btns">
-          <a href="#"><img src="/images/logo_facebook.svg" alt="facebook"></a>
-          <a href="#"><img src="/images/logo_instagram.svg" alt="instagram"></a>
-          <a href="#"><img src="/images/logo_matrimoni.svg" alt="matrimoni.it"></a>
-          <a href="#"><img src="/images/logo_linkedin.svg" alt="linkedin"></a>
+          <a href="#" target="_blank"><img src="/images/logo_facebook.svg" alt="facebook"></a>
+          <a href="#" target="_blank"><img src="/images/logo_instagram.svg" alt="instagram"></a>
+          <a href="#" target="_blank"><img src="/images/logo_matrimoni.svg" alt="matrimoni.it"></a>
+          <a href="#" target="_blank"><img src="/images/logo_linkedin.svg" alt="linkedin"></a>
         </div>
-        <a href="" class="email-link">dyme.music@gmail.com <div class="icon-arrow arrow-card"></div></a>
+        <a href="#" class="email-link">dyme.music@gmail.com <div class="icon-arrow arrow-card"></div></a>
       </div>
       <div class="card-container">
         <%= partial(:'partials/card-contact', :locals => {

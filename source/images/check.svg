@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.556 11.349">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: rgba(0,0,0,0);
+      }
+    </style>
+  </defs>
+  <g id="Check_copia" data-name="Check copia" transform="translate(-850.407 -599.718)">
+    <g id="Check_copia-2" data-name="Check copia">
+      <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M864.374,601.132l.175.175-8.346,8.346-.175-.175Z"/>
+      <path id="Forma_2_copia" data-name="Forma 2 copia" class="cls-1" d="M851.972,605.207l-.178.185,4.026,4.182.178-.185Z"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" class="cls-2" d="M856.028,609.477l8.346-8.346.175.175-8.347,8.347Zm-4.234-4.085.178-.185L856,609.389l-.178.185Z"/>
+  </g>
+</svg>

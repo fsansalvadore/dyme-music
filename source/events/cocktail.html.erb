@@ -1,0 +1,38 @@
+---
+title: "Cocktail | Eventi | DYME Music Agency"
+description: "Personalizza il tuo cocktail con la musica più adatta."
+---
+<%= partial(:'partials/page-header', :locals => {
+  :h1 => "COCKTAIL",
+  :category => "EVENTI",
+  :subheadline => "Personalizza il tuo cocktail con la musica più adatta",
+  :img_url => "/images/cocktail_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>
+Che cocktail party sarebbe senza un pò di musica? Ecco quello che può essere considerato un semplice dettaglio diventa invece un elemento molto importante per la corretta riuscita del tuo cocktail party. Gli ospiti non vengono ad assistere ad un concerto, la musica deve essere quasi impercettibile, una <em>piacevole colonna sonora</em> della serata.
+</p>
+    <br><br>
+    <p>
+Ovviamente la tipologia della serata ti guiderà direttamente nella scelta delle musiche adeguate, ma possiamo comunque dare dei suggerimenti a carattere generale utili per ogni occasione. Un consiglio è quello di seguire un ordine preciso, evitando di cambiare generi e stili musicali: la serata dev’essere un crescendo, e, i nostri musicisti professionisti sanno esattamente come accompagnare questo momento.
+</p>"
+}) %>
+<%= partial(:'partials/formation-section', :locals => {
+  :title => "Formazione",
+  :list_a => {
+    :a1 => "PIANOFORTE SOLO",
+    :a2 => "PIANOFORTE E VIOLINO",
+    :a3 => "ARPA E VIOLINO",
+    :a4 => "PIANOFORTE E VOCE",
+    :a5 => "DUO/TRIO JAZZ",
+    :a6 => "TRIO PIANOFORTE VIOLINO E VOCE"
+  },
+  :list_b => {
+    :b1 => "TRIO D’ARCHI",
+    :b2 => "QUARTETTO D’ARCHI",
+    :b3 => "PIANOBAR",
+    :b4 => "DJ-SET",
+    :b5 => "DJ-SET CON VOCALIST"
+  }
+}) %>
+<%= partial(:'partials/contact-section') %>
