@@ -64,8 +64,9 @@
   bottom: 0;
 }
 
-.page-category {
+.page-category, .form-category {
   margin-bottom: 20px;
+  text-transform: uppercase;
   display: flex;
 }
 
@@ -77,7 +78,7 @@
   margin: 0 10px;
 }
 
-.page-category p {
+.page-category p, .form-category p {
   font-size: 26;
   font-weight: bold;
 }

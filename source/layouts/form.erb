@@ -6,24 +6,23 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Suca" %></title>
+    <title><%= current_page.data.title || "Form" %></title>
     <meta name="description" content='<%= current_page.data.description || "DYME | Design Your Music Event" %>'>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
   </head>
   <body>
-    <%= partial "partials/nav" %>
-    <img id="bg-hp-img" src="/images/bg_violin.jpg" alt="Violino illuminato in acqua">
-    <main>
-      <%= yield %>
-      <%= partial 'partials/awards' %>
-      <%= partial 'partials/footer' %>
-    </main>
+    <div class="form-page">
+      <main>
+        <%= yield %>
+        <%= partial 'partials/footer' %>
+      </main>
+    </div>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <%= javascript_include_tag "site" %>
   </body>
 </html>

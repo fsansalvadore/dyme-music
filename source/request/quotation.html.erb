@@ -1,0 +1,33 @@
+---
+title: "Preventivo | Matrimoni | DYME Music Agency"
+description: "Richiedi un preventivo per il tuo evento."
+---
+
+<div class="form-top-bg">
+  <div class="top-page-btns">
+    <div class="return-btn">
+      <a href="<%= config[:host] %>" class="home-link"><span class="left-arrow arrow-card"></span> TORNA ALLA HOME PAGE</a>
+    </div>
+  </div>
+</div>
+<div id="form-main-container">
+  <div class="form-logo-container">
+    <img src="/images/logo_DYME_MusicAgency.png" alt="">
+  </div>
+  <div class="form-title-container">
+    <div class="form-category">
+      <p>Richiedi preventivo</p>
+    </div>
+    <div class="form-title">
+      <h1><span class="underline">Facci sapere come possiamo aiutarti</span></h1>
+      <p class="page-paragraph">Compila il form sottostante per richiedere un preventivo o per saperne di più.<br>
+        Puoi sempre contattarci via mail a <a href="#" class="email-form-link">dyme.music@gmail.com</a> oppure chiamando i seguenti numeri:
+      </p>
+      <p class="page-paragraph">
+        <span>Lorenzo <em>+39 393 485 7805</em></span>
+        <span>Davide <em>+39 340 177 5252</em></span>
+      </p>
+    </div>
+    <%= partial(:'partials/form-quotation') %>
+  </div>
+</div>

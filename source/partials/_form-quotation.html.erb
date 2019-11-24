@@ -1,0 +1,80 @@
+<div class="form-container">
+  <div class="row">
+    <form method="post" action="send_form_email.php" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="name" name="nome" type="text" class="validate" required>
+          <label for="name">Nome *</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="business" name="azienda" type="text" class="validate">
+          <label for="business">Azienda</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="email" name="email" type="email" class="validate" required>
+          <label for="email">Email *</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="phone" name="tel" type="tel" class="validate">
+          <label for="phone">Telefono</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <select name="tipologia" required>
+            <option value="" disabled selected>Scegli una tipologia</option>
+            <option value="Anniversario">Anniversario</option>
+            <option value="Aperitivo">Aperitivo</option>
+            <option value="Cerimonia">Cerimonia</option>
+            <option value="Party">Party</option>
+            <option value="Cocktail">Cocktail</option>
+            <option value="Aziendale">Aziendale</option>
+            <option value="Servizi-Extra">Servizi Extra</option>
+          </select>
+          <label>Tipologia di evento *</label>
+        </div>
+        <div class="input-field col s6">
+          <select name="formation">
+            <option value="" disabled selected>Scegli una formazione</option>
+            <option value="Arpa-violino">Arpa e violino</option>
+            <option value="Arpa-flauto">Arpa e flauto</option>
+            <option value="DJ-Set">DJ Set</option>
+            <option value="DJ-Set-vocalist">DJ Set con vocalist</option>
+            <option value="Duo-trio-jazz">Duo/trio Jazz</option>
+            <option value="Pianobar">Pianobar</option>
+            <option value="Pianoforte-solo">Pianoforte Solo</option>
+            <option value="Pianoforte-cantante">Pianoforte e Cantante</option>
+            <option value="Pianoforte-violino-cantante">Pianoforte, violino e Cantante</option>
+            <option value="Pianoforte-trio-archi">Pianoforte e trio d'archi</option>
+            <option value="Trio-pianoforte-violino-voce">Trio pianoforte violino e voce</option>
+            <option value="Trio-archi">Trio d'archi</option>
+            <option value="Quartetto-archi">Quartetto d'archi</option>
+            <option value="Organo">Organo</option>
+            <option value="Party-band">Party band</option>
+          </select>
+          <label>Formazione richiesta</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" name="messaggio" class="materialize-textarea"></textarea>
+          <label for="textarea1">Messaggio, Budget, Tempistiche, ecc</label>
+        </div>
+      </div>
+      <div class="disclaimer">
+        <div>
+          <label class="switch">
+            <input type="checkbox" required>
+            <span>Acconsento al <a href="<%= config[:host] %>/privacy.html"><u>trattamento dei miei dati</u></a>. *</span>
+          </label>
+          <p>* Campi obbligatori</p>
+        </div>
+        <div>
+          <button type="submit" value="Invia Preventivo" class="btn-submit-quotation">Invia</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
