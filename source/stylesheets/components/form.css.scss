@@ -1,11 +1,67 @@
 .form-container {
-  margin-top: 30px;
+  margin: 100px 0;
   padding: 0 20px;
 
-  input {
+  input, textarea {
     color: var(--off-white);
     border-bottom: 1px solid var(--secondary-accent) !important;
     background-color: none ;
   }
+  form {
+    margin-bottom: 30px;
+  }
 
+  .disclaimer {
+    display: flex;
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    div:first-of-type {
+      flex: 1;
+    }
+
+    a {
+      color: var(--secondary-accent);
+    }
+  }
+
+  button {
+    width: 200px;
+  }
+
+  .btn-submit-quotation {
+    background-color: var(--secondary-accent);
+    border: none;
+    color: var(--off-white);
+    text-transform: uppercase;
+    font-size: 20px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-3px);
+      background-color: var(--secondary-accent-hover);
+    }
+  }
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  background-color: black;
+  -webkit-background-color: black;
+  -webkit-text-fill-color: var(--secondary-accent);
+  -webkit-box-shadow: 0 0 0px 1000px var(--off-black) inset !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
