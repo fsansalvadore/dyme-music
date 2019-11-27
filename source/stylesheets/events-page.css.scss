@@ -21,6 +21,11 @@
 .return-btn {
   position: relative;
   margin-left: 40px;
+  z-index: 99;
+
+  a {
+    z-index: 999;
+  }
 }
 
 .home-link {
