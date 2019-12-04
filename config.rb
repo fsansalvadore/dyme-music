@@ -46,5 +46,7 @@ page '/request/*', layout: 'form'
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :minify_html
+  activate :gzip
   config[:host] = "http://localhost:4567"
 end

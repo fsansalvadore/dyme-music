@@ -33,12 +33,14 @@ GEM
     hash-utils (2.2.0)
       ruby-version (>= 0.4.0)
     hashie (3.6.0)
+    htmlcompressor (0.2.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     image-optimizer (0.2.3)
       which
       yaop (>= 0.2.0)
     kramdown (1.17.0)
+    libv8 (3.16.14.19)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -77,6 +79,9 @@ GEM
       servolux
       tilt (~> 2.0.9)
       uglifier (~> 3.0)
+    middleman-minify-html (3.4.1)
+      htmlcompressor (~> 0.2.0)
+      middleman-core (>= 3.2)
     minitest (5.13.0)
     multitype-introspection (0.2.0)
       hash-utils (>= 0.16.0)
@@ -94,11 +99,15 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    ref (2.0.0)
     ruby-version (0.4.3)
     sassc (2.2.1)
       ffi (~> 1.9)
     servolux (0.13.0)
     temple (0.8.2)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -122,6 +131,8 @@ DEPENDENCIES
   image-optimizer (~> 0.2.3)
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
+  middleman-minify-html
+  therubyracer
   tzinfo-data
   wdm (~> 0.1)
 
