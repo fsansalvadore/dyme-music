@@ -7,8 +7,8 @@
           <label for="name">NOME *</label>
         </div>
         <div class="input-field col s6">
-          <input id="name" name="cognome" type="text" class="validate" required>
-          <label for="name">COGNOME *</label>
+          <input id="lastname" name="cognome" type="text" class="validate" required>
+          <label for="lastname">COGNOME *</label>
         </div>
       </div>
       <div class="row">
@@ -23,8 +23,8 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea id="textarea1" name="messaggio" class="materialize-textarea"></textarea>
-          <label for="textarea1">DESCRIZIONE BREVE (REPERTORIO, ESPERIENZA, N. COMPONENTI, ECC) *</label>
+          <textarea id="message" name="messaggio" class="materialize-textarea" required></textarea>
+          <label for="message">DESCRIZIONE BREVE (REPERTORIO, ESPERIENZA, N. COMPONENTI, ECC) *</label>
         </div>
       </div>
       <div class="row">
@@ -43,8 +43,27 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea id="textarea1" name="messaggio" class="materialize-textarea"></textarea>
-          <label for="textarea1">LINK UTILI (AUDIO, VIDEO) *</label>
+          <input id="link1" name="link1" type="url" class="validate" required>
+          <label for="link1">LINK UTILI (AUDIO, VIDEO) *</label>
+        </div>
+      </div>
+      <div class="row disabled-link" id="link-row-2">
+        <div class="input-field col s12">
+          <span class="remove-link">- Rimuovi link</span>
+          <input id="link2" name="link2" type="url">
+          <label for="link2">LINK UTILI (AUDIO, VIDEO)</label>
+        </div>
+      </div>
+      <div class="row disabled-link" id="link-row-3">
+        <div class="input-field col s12">
+          <span class="remove-link">- Rimuovi link</span>
+          <input id="link3" name="link3" type="url">
+          <label for="link3">LINK UTILI (AUDIO, VIDEO)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <span class="add-field not-yet-abled">+ Aggiungi link</span>
         </div>
       </div>
       <div class="disclaimer">

@@ -47,6 +47,10 @@
   }
 }
 
+.input-field {
+  position: relative;
+}
+
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -64,4 +68,36 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--secondary-accent);
   -webkit-box-shadow: 0 0 0px 1000px var(--off-black) inset !important;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+span.add-field {
+  color: var(--secondary-accent);
+  margin-bottom: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.add-field:hover {
+  opacity: 1;
+}
+
+span.remove-link {
+  color: var(--secondary-accent);
+  position: absolute;
+  right: 20px;
+  bottom: 35%;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+span.remove-link:hover {
+  opacity: 1;
+}
+
+.disabled-link {
+  display: none;
+}
+
+.not-yet-abled {
+  opacity: 0.4 !important;
 }
