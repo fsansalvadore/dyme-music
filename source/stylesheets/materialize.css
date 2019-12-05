@@ -6141,7 +6141,7 @@ textarea.materialize-textarea {
   outline: none;
   height: 3rem;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0 0 8px 0;
   padding: 0;
   -webkit-box-shadow: none;
@@ -7178,7 +7178,7 @@ select {
   height: 3rem;
   line-height: 3rem;
   width: 100%;
-  font-size: 17px;
+  font-size: 16px;
   margin: 0 0 8px 0;
   padding: 0;
   display: block;
