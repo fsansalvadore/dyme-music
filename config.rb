@@ -5,6 +5,14 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# ES6 support
+::Sprockets::ES6.configure do |config|
+  config.marshal_load({
+    modules: 'amd',
+    moduleIds: true
+  })
+end
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -30,6 +38,12 @@ page '/request/*', layout: 'form'
 #   },
 # )
 
+# configure :development do
+#   activate :livereload
+# end
+
+# activate :directory_indexes
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
@@ -44,7 +58,13 @@ page '/request/*', layout: 'form'
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
+  activate :gzip
   activate :minify_css
   activate :minify_javascript
-  config[:host] = "http://localhost:4567"
+  activate :asset_hash
+  config[:host] = "http://dyme-music.com"
+end
+
+activate :s3_sync do |s3|
+  s3.prefer_gzip = true
 end
