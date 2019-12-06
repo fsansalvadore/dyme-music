@@ -125,7 +125,39 @@ description: "DYME | Design Your Music Event - Music Agency for Events"
       <h2><span class="underline">GALLERY</span></h2>
       <p>La musica è un libro che puoi leggere anche a occhi chiusi.</p>
       <div class="gallery-container">
-
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <%
+              images = [
+                {img: "dyme_01.jpg", alt: "Yo"},
+                {img: "dyme_02.jpg", alt: "Yo"},
+                {img: "dyme_03.jpg", alt: "Yo"},
+                {img: "dyme_04.jpg", alt: "Yo"},
+                {img: "dyme_05.jpg", alt: "Yo"},
+                {img: "dyme_06.jpg", alt: "Yo"},
+                {img: "dyme_07.jpg", alt: "Yo"},
+                {img: "dyme_08.jpg", alt: "Yo"},
+                {img: "dyme_09.jpg", alt: "Yo"},
+                {img: "dyme_10.jpg", alt: "Yo"},
+                {img: "dyme_11.jpg", alt: "Yo"},
+                {img: "dyme_12.jpg", alt: "Yo"},
+              ]
+              images.each do |slide|
+             %>
+            <div class="swiper-slide">
+              <div class="imgBx">
+                <img src="/images/gallery/<%= slide[:img] %>" alt="<%= slide[:alt] %>">
+              </div>
+            </div>
+            <% end %>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
     <section id="chi-siamo">

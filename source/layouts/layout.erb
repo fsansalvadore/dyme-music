@@ -9,6 +9,7 @@
     <title><%= current_page.data.title || "Suca" %></title>
     <meta name="description" content='<%= current_page.data.description || "DYME | Design Your Music Event" %>'>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <%= stylesheet_link_tag "site" %>
   </head>
   <body>
@@ -24,6 +25,31 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" ></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <%= javascript_include_tag "site" %>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      spaceBetween: 10,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 60,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+       navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
   </body>
 </html>
