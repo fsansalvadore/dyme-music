@@ -4709,7 +4709,7 @@ small {
     font-size: 1.2rem;
   }
 }
-*/
+
 .scale-transition {
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
   transition: -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
@@ -8863,7 +8863,7 @@ input[type=range]::-ms-thumb {
     line-height: 44px;
   }
 }
-*/
+
 /* Timepicker Containers */
 .timepicker-modal {
   max-width: 325px;
