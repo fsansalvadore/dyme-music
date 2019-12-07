@@ -1,9 +1,37 @@
-// This is where it all goes :)
 //= require babel/polyfill
 
-$(document).ready(function(){
-  $('select').formSelect();
+$(document).ready(function() {
+    $("a.smooth-scroll").on('click', function(event) {
+        event.preventDefault();
+        var section = $(this).attr("href");
+        $('html, body').animate({
+            scrollTop: $(section).offset().top
+        }, 750, function() {
+            location.hash = section;
+        });
+        return false;
+    });
+    $('select').formSelect();
 });
+$(document).on("scroll", function() {
+    var scrollDistance = $(window).scrollTop();
+    $('.page-section').each(function(i) {
+        if ($(this).offset().top <= scrollDistance + 10) {
+            $('nav li a').removeClass('menu-active');
+            $('nav li a').eq(i).addClass('menu-active');
+        } else {
+            $('nav li a').eq(i).removeClass('menu-active');
+        }
+    });
+});
+// $('#menu-icon').click(function() {
+//     $('#menu-icon div').toggleClass('menu').toggleClass('close');
+//     $('.nav-fixed').toggleClass('nav-open').toggleClass('nav-closed');
+// })
+// $('main').click(function() {
+//     $('#menu-icon div').addClass('menu').removeClass('close');
+//     $('.nav-fixed').removeClass('nav-open').addClass('nav-closed');
+// })
 
 const addLinkBtn = document.querySelector("#form-main-container span.add-field");
 const link2 = document.getElementById("link-row-2");

@@ -114,3 +114,7 @@
 #btn-artist-collaboration:hover {
   color: var(--secondary-accent);
 }
+
+.menu-active {
+  color: var(--secondary-accent) !important;
+}
