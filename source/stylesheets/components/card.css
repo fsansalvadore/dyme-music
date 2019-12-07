@@ -1,14 +1,24 @@
 .card-container-half {
   position: relative;
-  width: 50%;
+  width: 100%;
   float: left;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+}
+
+.card-container-half:first-of-type {
+  margin-right: 5%;
 }
 
 .card-container-third {
   position: relative;
-  width: 30%;
+  width: 100%;
   float: left;
+  margin-right: 5%;
+  margin-bottom: 30px;
+}
+
+.card-container-third:last-of-type {
+  margin-right: 0;
 }
 
 .card-container-horiz {
@@ -20,28 +30,30 @@
 
 .card-container {
   padding-top: 30px;
+  width: 100%;
 }
 
 .card {
   position: relative;
-  width: 90%;
-  margin: 0 5%;
+  /*width: 90%;*/
+  /*margin: 0 5% !important;*/
   border-radius: 3px;
   transform-style: preserve-3d;
   background-size: cover;
   background-position: center;
+  margin-right: 30px;
 }
 
+
 .card-vert {
-  width: 90%;
-  margin: 0 5%;
+  width: 100%;
+  /*margin: 0 5%;*/
   height: 350px;
   background-size: cover;
   background-position: center;
 }
 
 .card-horiz {
-  width: 95%;
   margin: 0 2.5%;
   height: 200px;
   background-size: cover;
@@ -220,20 +232,20 @@
 }
 
 .card-single .btn-card {
-  opacity: 0;
+  opacity: 1;
   box-shadow: 0 0px 10px rgba(0,0,0,0.4);
   transition: all 0.1s ease;
 }
 
-.card-single:hover .card-single-cta p {
+.card-single-cta p {
   margin-bottom: 35px;
 }
-.card-single:hover .btn-card {
+.btn-card {
   opacity: 0.9;
   transition: all 0.2s ease 0.1s;
 }
 
-.btn-card:hover {
+.btn-card {
   opacity: 1;
   padding: 12px 50px;
   bottom: 3px;
@@ -259,4 +271,39 @@
   border: 1px solid var(--secondary-accent);
   border-radius: 50%;
   margin-right: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+  .card-container-half {
+    width: 47.5%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .card-container-third {
+    width: 30%;
+  }
+
+  .card-single .btn-card {
+    opacity: 0;
+  }
+
+  .card-single-cta p {
+    margin-bottom: -30px;
+  }
+
+  .card-single:hover .card-single-cta p {
+    margin-bottom: 35px;
+  }
+  .card-single:hover .btn-card {
+    opacity: 0.9;
+    transition: all 0.2s ease 0.1s;
+  }
+
+  .btn-card:hover {
+    opacity: 1;
+    padding: 12px 50px;
+    bottom: 3px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  }
 }

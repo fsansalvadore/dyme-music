@@ -12,7 +12,7 @@
   }
 
   .disclaimer {
-    display: flex;
+    display: block;
 
     p {
       margin-top: 20px;
@@ -20,6 +20,7 @@
     }
     div:first-of-type {
       flex: 1;
+      margin-bottom: 30px;
     }
 
     a {
@@ -100,4 +101,10 @@ span.remove-link:hover {
 
 .not-yet-abled {
   opacity: 0.4 !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .form-container .disclaimer {
+    display: flex;
+  }
 }

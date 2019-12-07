@@ -20,13 +20,7 @@
 }
 
 .return-btn {
-  position: relative;
-  margin-left: 40px;
-  z-index: 99;
-
-  a {
-    z-index: 999;
-  }
+  display: none;
 }
 
 .home-link {
@@ -54,7 +48,7 @@
   color: var(--off-white);
   float: right;
   position: absolute;
-  right: 80px;
+  right: 2.5%;
 }
 
 .left-arrow {
@@ -104,8 +98,7 @@
 }
 
 .page-title {
-  display: flex;
-  align-items: baseline;
+  display: block;
 }
 
 .page-title h1 {
@@ -114,13 +107,13 @@
 }
 
 .page-title p {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .page-intro-text {
   padding-top: 20px;
   padding-bottom: 100px;
-  column-count: 2;
+  column-count: 1;
   column-gap: 40px;
 }
 
@@ -149,14 +142,14 @@
 
 .song-list {
   padding-top: 40px;
-  display: flex;
+  display: block;
   margin-bottom: 30px;
 }
 
 .song-list ul {
-  width: 50%;
+  width: 100%;
   line-height: 1.6rem;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .song-list li::before {
@@ -193,4 +186,39 @@ url("/images/cerimony_formation.jpg");
   linear-gradient(to bottom, var(--off-black) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--off-black) 100%),
   linear-gradient(to right, var(--off-black) 0%, rgba(0,0,0,0) 20%),
 url("/images/cerimony_alternatives.jpg");
+}
+
+@media only screen and (min-width: 600px) {
+  .return-btn {
+    display: visible;
+    position: relative;
+    margin-left: 40px;
+    z-index: 99;
+
+      a {
+        z-index: 999;
+      }
+    }
+
+  .song-list {
+    display: flex;
+  }
+
+  .song-list ul {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .page-title {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .page-title p {
+    font-size: 30px;
+  }
+
+  .page-intro-text {
+    column-count: 2;
+  }
 }

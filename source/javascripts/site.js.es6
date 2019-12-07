@@ -30,13 +30,13 @@ $(document).on("scroll", function() {
     });
 });
 
-// $('#menu-icon').click(function() {
-//     $('#menu-icon div').toggleClass('menu').toggleClass('close');
-//     $('.nav-fixed').toggleClass('nav-open').toggleClass('nav-closed');
-// })
+$('#menu-icon').click(function() {
+    $('#menu-icon div').toggleClass('menu').toggleClass('close');
+    $('#nav').toggleClass('nav-open').toggleClass('nav-closed');
+})
 // $('main').click(function() {
 //     $('#menu-icon div').addClass('menu').removeClass('close');
-//     $('.nav-fixed').removeClass('nav-open').addClass('nav-closed');
+//     $('#nav').removeClass('nav-open').addClass('nav-closed');
 // })
 
 const addLinkBtn = document.querySelector("#form-main-container span.add-field");
