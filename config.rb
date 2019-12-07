@@ -38,9 +38,9 @@ page '/request/*', layout: 'form'
 #   },
 # )
 
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # activate :directory_indexes
 
@@ -62,7 +62,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  config[:host] = "http://dyme-music.com"
+  config[:host] = "http://localhost:4567"
 end
 
 activate :s3_sync do |s3|

@@ -9,6 +9,7 @@
 @import "./home-page.css.scss";
 @import "./form-page.css.scss";
 @import "./thanks.css.scss";
+@import "./privacy.css.scss";
 @import "./materialize.css";
 
 :root {
@@ -28,4 +29,8 @@
   font-size: 20px;
   text-decoration: none;
   list-style: none;
+}
+
+body {
+  overflow-x: hidden;
 }
