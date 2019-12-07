@@ -13,6 +13,10 @@
     background-position: center;
   }
 
+.row .col {
+  padding: 0;
+}
+
 .form-page {
   width: 100%;
 
@@ -73,3 +77,8 @@
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .row .col {
+    padding: 0 0.75rem;
+  }
+}

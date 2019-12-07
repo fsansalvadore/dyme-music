@@ -8,7 +8,6 @@ body {
   display: flex;
 }
 
-
 #bg-hp-img {
   position: absolute;
   z-index: -10;
@@ -20,6 +19,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
   margin-left: var(--nav-width);
   transition: margin 0.3s ease;
 }
@@ -32,14 +32,16 @@ main {
 }
 
 #logo-group {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2%;
   align-items: center;
   width: 100%;
 }
 
 #logo-group img {
-  width: 247px;
-  height: 134px;
+  width: 128px;
+  height: 67px;
   margin: 0 10% 0 30px;
   animation: opacity-in 2s 0.2s both;
 }
@@ -68,15 +70,16 @@ section p {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 45px;
   line-height: 1em;
+  margin: 0;
 }
 
 .underline, h1 span {
   background-image: linear-gradient(120deg, var(--secondary-accent) 0%, var(--secondary-accent) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
-  font-size: inherit;
+  font-size: 50px;
   background-position: 0 95%;
   padding: 0 10px;
   left: -10px;
@@ -99,12 +102,12 @@ em {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 h2 + p {
-  padding: 0 80px 0 20px;
-  margin: 30px 20px 50px 0;
+  padding: 0;
+  margin: 30px 0 50px 0;
   font-size: 24px;
   line-height: 1.6rem;
 }
@@ -137,8 +140,8 @@ url("/images/events_bg.jpg");
 }
 
 #chi-siamo h2 + p {
-  padding: 0 30px;
-  width: 700px;
+  padding: 0 2.5%;
+  max-width: 700px;
   margin: 30px 0 50px 0;
 }
 
@@ -182,17 +185,22 @@ url("/images/events_bg.jpg");
 }
 
 #social-contacts {
-  margin-top: 50px;
-  margin-bottom: 80px;
+  margin: 50px 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 26;
+}
+
+.social-btns {
+  width: 280px;
+  margin-bottom: 30px;
 }
 
 .social-btns a {
   display: inline-flex;
   list-style: none;
-  margin-right:20px;
+  margin-right: 2.5%;
   align-items: center;
   justify-content: center;
   width: 50px;
@@ -232,7 +240,7 @@ url("/images/events_bg.jpg");
 }
 
 #social-contacts .email-link {
-  padding: 12px 50px 12px 12px;
+  padding: 12px 50px 12px 0;
   display: flex;
   align-items: center;
 }
@@ -264,7 +272,7 @@ url("/images/events_bg.jpg");
 }
 
 .badge-container img {
-  margin-right: 5%;
+  margin: 15px 5%;
   height: 115px;
   width: auto;
 }
@@ -275,11 +283,48 @@ url("/images/events_bg.jpg");
   .gallery-container{
     height: 700px;
   }
+
+  #logo-group img {
+    width: 247px;
+    height: 134px;
+  }
+
+  .underline, h1 span {
+    font-size: inherit;
+  }
+
+  #social-contacts {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #social-contacts .email-link {
+    padding: 12px 50px 12px 12px;
+  }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   // titolone viene riarrangiato
   // e le tre card si impilano
+  #logo-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h2 + p {
+    padding: 0 80px 0 20px;
+    margin: 30px 20px 50px 0;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

@@ -1,5 +1,5 @@
 .formation-section {
-  display: flex;
+  display: block;
   width: 100%;
   left: 0;
   right: 0;
@@ -13,13 +13,13 @@
 }
 
 .formation-list {
-  width: 70%;
+  width: 80%;
 }
 
 .formation-list ul {
-  width: 45%;
+  width: 100%;
   float: left;
-  margin-right: 5%;
+  margin: 0 30px;
 }
 
 .formation-list li {
@@ -34,4 +34,23 @@
 
 .formation-list li:hover {
   opacity: 1;
+}
+
+input {
+  margin: 40px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .formation-section {
+    display: flex;
+  }
+
+  .formation-list {
+    width: 70%;
+  }
+
+  .formation-list ul {
+    width: 45%;
+    margin-right: 5%;
+  }
 }
