@@ -6,13 +6,13 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Suca" %></title>
+    <title><%= current_page.data.title || "DYME" %></title>
     <meta name="description" content='<%= current_page.data.description || "DYME | Design Your Music Event" %>'>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
   </head>
   <body>
-    <%= partial "partials/nav" %>
+    <%= partial "partials/nav-2" %>
     <main>
       <%= yield %>
       <%= partial 'partials/awards' %>

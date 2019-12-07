@@ -15,6 +15,11 @@ $(document).ready(function() {
 });
 $(document).on("scroll", function() {
     var scrollDistance = $(window).scrollTop();
+    if (scrollDistance > 400) {
+      $('.nav-logo img').addClass('show-logo');
+    } else {
+      $('.nav-logo img').removeClass('show-logo');
+    }
     $('.page-section').each(function(i) {
         if ($(this).offset().top <= scrollDistance + 10) {
             $('nav li a').removeClass('menu-active');
@@ -24,6 +29,7 @@ $(document).on("scroll", function() {
         }
     });
 });
+
 // $('#menu-icon').click(function() {
 //     $('#menu-icon div').toggleClass('menu').toggleClass('close');
 //     $('.nav-fixed').toggleClass('nav-open').toggleClass('nav-closed');

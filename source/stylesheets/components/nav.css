@@ -10,6 +10,27 @@
   z-index: 99;
 }
 
+.nav-logo, .nav-logo-2 {
+  position: absolute;
+  left: 34px;
+  top: 40px;
+}
+
+.nav-logo img, .nav-logo-2 img {
+  width: 120px;
+  height: auto;
+}
+
+.nav-logo img {
+  will-change: opacity;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.show-logo {
+  opacity: 1 !important;
+}
+
 #nav-links {
   flex: 1;
   line-height: 60px;
