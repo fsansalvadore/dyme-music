@@ -1,14 +1,23 @@
 .card-container-half {
   position: relative;
-  width: 50%;
+  width: 47.5%;
   float: left;
   margin-bottom: 50px;
+}
+
+.card-container-half:first-of-type {
+  margin-right: 5%;
 }
 
 .card-container-third {
   position: relative;
   width: 30%;
   float: left;
+  margin-right: 5%;
+}
+
+.card-container-third:last-of-type {
+  margin-right: 0;
 }
 
 .card-container-horiz {
@@ -20,28 +29,30 @@
 
 .card-container {
   padding-top: 30px;
+  width: 100%;
 }
 
 .card {
   position: relative;
-  width: 90%;
-  margin: 0 5%;
+  /*width: 90%;*/
+  /*margin: 0 5% !important;*/
   border-radius: 3px;
   transform-style: preserve-3d;
   background-size: cover;
   background-position: center;
+  margin-right: 30px;
 }
 
+
 .card-vert {
-  width: 90%;
-  margin: 0 5%;
+  width: 100%;
+  /*margin: 0 5%;*/
   height: 350px;
   background-size: cover;
   background-position: center;
 }
 
 .card-horiz {
-  width: 95%;
   margin: 0 2.5%;
   height: 200px;
   background-size: cover;

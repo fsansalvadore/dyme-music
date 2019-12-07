@@ -8,6 +8,7 @@ body {
   display: flex;
 }
 
+
 #bg-hp-img {
   position: absolute;
   z-index: -10;
@@ -20,6 +21,7 @@ main {
   flex-direction: column;
   overflow-y: auto;
   margin-left: var(--nav-width);
+  transition: margin 0.3s ease;
 }
 
 #logo-container {
@@ -32,12 +34,13 @@ main {
 #logo-group {
   display: inline-flex;
   align-items: center;
+  width: 100%;
 }
 
 #logo-group img {
   width: 247px;
   height: 134px;
-  margin-right: 180px;
+  margin: 0 10% 0 30px;
   animation: opacity-in 2s 0.2s both;
 }
 
@@ -56,7 +59,7 @@ section, .formation-section {
 }
 
 section {
-  width: 100%;
+  // width: calc(100% - 80px);
   padding: 0 40px;
 }
 
@@ -140,7 +143,7 @@ url("/images/events_bg.jpg");
 }
 
 .gallery-container{
-  height: 700px;
+  height: 600px;
 }
 
 .gallery-container:after {
@@ -261,7 +264,24 @@ url("/images/events_bg.jpg");
 }
 
 .badge-container img {
-  margin-right: 115px;
+  margin-right: 5%;
   height: 115px;
   width: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  // card grosse si impilano
+  // max width foto gallery più piccole
+  .gallery-container{
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  // titolone viene riarrangiato
+  // e le tre card si impilano
+}
+
+@media only screen and (max-width: 1200px) {
+
 }
