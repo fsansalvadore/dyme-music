@@ -3,11 +3,11 @@
     <form method="post" action="send_collaboration.php" class="col s12">
       <div class="row">
         <div class="input-field col s12 m6">
-          <input id="name" name="nome" type="text" class="validate" required>
+          <input id="name" name="name" type="text" class="validate" required>
           <label for="name">NOME *</label>
         </div>
         <div class="input-field col s12 m6">
-          <input id="lastname" name="cognome" type="text" class="validate" required>
+          <input id="lastname" name="lastname" type="text" class="validate" required>
           <label for="lastname">COGNOME *</label>
         </div>
       </div>
@@ -17,19 +17,19 @@
           <label for="email">EMAIL *</label>
         </div>
         <div class="input-field col s12 m6">
-          <input id="phone" name="tel" type="tel" class="validate">
-          <label for="phone">GENERE MUSICALE *</label>
+          <input id="genre" name="genre" type="text" class="validate">
+          <label for="genre">GENERE MUSICALE *</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea id="message" name="messaggio" class="materialize-textarea" required></textarea>
+          <textarea id="message" name="message" class="materialize-textarea" required></textarea>
           <label for="message">DESCRIZIONE BREVE (REPERTORIO, ESPERIENZA, N. COMPONENTI, ECC) *</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <select name="tipologia" required>
+          <select name="region" required>
             <option value="" disabled selected>SELEZIONA UNA O PIU' REGIONI</option>
             <option value="Emilia-Romagna">Emilia-Romagna</option>
             <option value="Liguria">Liguria</option>
@@ -75,7 +75,7 @@
           <p>* Campi obbligatori</p>
         </div>
         <div>
-          <button type="submit" value="Invia Preventivo" class="btn-submit-quotation">Invia</button>
+          <button type="submit" value="Invia" class="btn-submit-quotation">Invia</button>
         </div>
       </div>
     </form>
