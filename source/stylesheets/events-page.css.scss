@@ -131,7 +131,7 @@
 }
 
 .page-paragraph em {
-  color: var(--secondary-accent);
+  color: var(--secondary-accent) !important;
   font-style: normal;
 }
 
@@ -190,7 +190,7 @@ url("/images/cerimony_alternatives.jpg");
 
 @media only screen and (min-width: 600px) {
   .return-btn {
-    display: visible;
+    display: block;
     position: relative;
     margin-left: 40px;
     z-index: 99;

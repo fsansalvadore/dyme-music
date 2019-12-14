@@ -9,11 +9,11 @@
 
 .formation-title {
   width: 30%;
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .formation-list {
-  width: 80%;
+  width: calc(100% - 60px);
 }
 
 .formation-list ul {
@@ -28,10 +28,6 @@
   opacity: 0.85;
 }
 
-.formation-list li:last-of-type {
-  border-bottom: none;
-}
-
 .formation-list li:hover {
   opacity: 1;
 }
@@ -40,7 +36,7 @@ input {
   margin: 40px 0;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .formation-section {
     display: flex;
   }
@@ -49,8 +45,16 @@ input {
     width: 70%;
   }
 
+  .formation-list li:last-of-type {
+    border-bottom: none;
+  }
+
   .formation-list ul {
     width: 45%;
-    margin-right: 5%;
+    margin: 0 5% 0 0;
+  }
+
+  .formation-title {
+    padding: 0 40px;
   }
 }
