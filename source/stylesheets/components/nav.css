@@ -68,6 +68,7 @@
   height: 140px;
   width: 100%;
   display: flex;
+  margin-bottom: 80px;
   flex-direction: column;
   text-align: center;
 }
@@ -84,6 +85,7 @@
 #btn-quotation {
   position: relative;
   margin: 0 15%;
+  font-size: 16px;
   color: var(--secondary-accent);
   border: 1px solid var(--secondary-accent);
 }
@@ -284,5 +286,13 @@ div#menu-icon:hover {
 
   .nav-logo img {
     opacity: 0;
+  }
+
+  #btn-quotation {
+    font-size: 20px;
+  }
+
+  #nav-btn-group {
+    margin-bottom: 0;
   }
 }

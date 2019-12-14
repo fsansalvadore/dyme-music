@@ -47,17 +47,16 @@
       margin-top: 30px;
       padding: 0 12px;
 
-      span:first-of-type:after {
-        content: '';
-        height: 20px;
-        border-right: 2px solid var(--off-white);
-        margin: 0 15px;
-        }
+      span {
+        display: block;
+        line-height: 2.5rem;
       }
     }
-    .form-category {
-      padding-left: 13px;
-    }
+  }
+
+  .form-category {
+    padding-left: 13px;
+  }
 
   .form-logo-container {
     width: 100%;
@@ -80,5 +79,16 @@
 @media only screen and (min-width: 600px) {
   .row .col {
     padding: 0 0.75rem;
+  }
+
+  .form-page #form-main-container .page-paragraph span {
+    display: inline;
+  }
+
+  #form-main-container .page-paragraph span:first-of-type:after {
+    content: '';
+    height: 20px;
+    border-right: 2px solid var(--off-white);
+    margin: 0 15px;
   }
 }

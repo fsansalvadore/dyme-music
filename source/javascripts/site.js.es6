@@ -58,15 +58,16 @@ link1.addEventListener("blur", () => {
 removeLinks.forEach((l, index) => {
   l.addEventListener("click", (e) => {
     if ((index + 2) == 2) {
-      link = link2;
+      count --;
+      addLinkBtn.classList.remove("hide");
+      link2.classList.add("disabled-link");
       input2.value = "";
     } else {
-      link = link3;
+      count --;
+      addLinkBtn.classList.remove("hide");
+      link3.classList.add("disabled-link");
       input3.value = "";
     }
-    count --;
-    addLinkBtn.classList.remove("hide");
-    link.classList.add("disabled-link");
   })
 })
 

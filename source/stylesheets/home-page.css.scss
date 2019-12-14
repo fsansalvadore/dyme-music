@@ -34,16 +34,20 @@ main {
 #logo-group {
   display: flex;
   flex-direction: column;
-  padding: 0 2%;
+  padding: 0 30px;
   align-items: center;
   width: 100%;
 }
 
 #logo-group img {
-  width: 128px;
-  height: 67px;
-  margin: 0 10% 0 30px;
+  width: 180px;
+  height: auto;
+  margin: 0 10% 40px 30px;
   animation: opacity-in 2s 0.2s both;
+}
+
+#main-title-group {
+  max-width: 510px;
 }
 
 @keyframes opacity-in {
@@ -62,7 +66,7 @@ section, .formation-section {
 
 section {
   // width: calc(100% - 80px);
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 section p {
@@ -272,7 +276,7 @@ url("/images/events_bg.jpg");
 }
 
 .badge-container img {
-  margin: 15px 5%;
+  margin: 15px 2%;
   height: 115px;
   width: auto;
 }
@@ -296,6 +300,10 @@ url("/images/events_bg.jpg");
   #social-contacts {
     flex-direction: row;
     align-items: center;
+  }
+
+  .social-btns {
+    margin-bottom: 0;
   }
 
   #social-contacts .email-link {
