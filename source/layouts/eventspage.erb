@@ -8,6 +8,7 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "DYME" %></title>
     <meta name="description" content='<%= current_page.data.description || "DYME | Design Your Music Event" %>'>
+    <%= partial 'partials/favicon' %>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
   </head>
