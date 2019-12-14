@@ -1,10 +1,12 @@
 <?php
 $errors = '';
-$myemail = 'f.sansalvadore@gmail.com';//<-----Put Your email address here.
+$myemail = 'info@dyme-music.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  ||
    empty($_POST['lastname'])  ||
    empty($_POST['email']) ||
-   empty($_POST['tipologia']))
+   empty($_POST['message']) ||
+   empty($_POST['region']) ||
+   empty($_POST['link1']))
 {
     $errors .= "\n Error: all fields are required";
 }
@@ -36,7 +38,9 @@ $email_body = "Nuova richiesta di collaborazione da: \n \n Nome: $name \n ".
 "Email: $email_address\n ".
 "Genere musicale: $genre\n ".
 "Breve descrizione: \n $message\n ".
-"Link: \n$link1\n$link2\n$link3\n ";
+"Link 1: $link1\n ".
+"Link 2: $link2\n ".
+"Link 3: $link3\n ";
 $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
