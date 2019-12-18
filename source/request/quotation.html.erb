@@ -12,11 +12,13 @@ description: "Richiedi un preventivo per il tuo evento."
 </div>
 <div id="form-main-container">
   <div class="form-logo-container">
-    <img src="/images/logo_DYME_MusicAgency.png" alt="">
+    <a href="<%= config[:host] %>/">
+      <img src="/images/logo_DYME_MusicAgency.png" alt="">
+    </a>
   </div>
   <div class="form-title-container">
     <div class="form-category">
-      <p>Richiedi preventivo</p>
+      <a href="<%= config[:host] %>/"><p>DYME</p></a><p>Richiedi preventivo</p>
     </div>
     <div class="form-title">
       <h1><span class="underline">Facci sapere come possiamo aiutarti</span></h1>

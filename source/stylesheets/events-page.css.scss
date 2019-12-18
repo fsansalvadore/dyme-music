@@ -84,7 +84,7 @@
   display: flex;
 }
 
-.page-category p:first-child::after {
+.page-category p:first-child::after, .form-category p:first-child::after {
   content: '';
   height: 20px;
   background-color: var(--secondary-accent);
