@@ -23,6 +23,8 @@ page '/*.txt', layout: false
 page '/weddings/*', layout: 'eventspage'
 page '/events/*', layout: 'eventspage'
 page '/request/*', layout: 'form'
+page '/not_found.html', layout: 'error'
+page '/internal_server_error.html', layout: 'error'
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

@@ -2,4 +2,6 @@
 
 # Allow crawling of all content
 User-agent: *
-Disallow:
+Disallow: /request/thank-you-quotation.html
+Disallow: /request/thank-you-artist.html
+Disallow: /privacy.html

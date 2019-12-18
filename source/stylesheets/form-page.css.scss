@@ -27,8 +27,9 @@
     flex-direction: column;
     justify-content: center;
   }
+}
 
-  #form-main-container {
+#form-main-container {
     top: 0;
     max-width: 1000px;
     width: 90%;
@@ -74,7 +75,6 @@
   footer {
     background-image: url("/images/footer_bg.jpg");
   }
-}
 
 @media only screen and (min-width: 600px) {
   .row .col {
