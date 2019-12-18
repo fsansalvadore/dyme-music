@@ -88,6 +88,13 @@ h1 {
   padding: 0 10px;
   left: -10px;
   transition: background-size 0.25s ease-in;
+  animation: underlineAnim 0.9s cubic-bezier(.50, .01, .30, .99) both;
+  animation-delay: 0.5s;
+}
+
+.underlineAnim {
+  animation: underlineAnim 0.9s cubic-bezier(.50, .01, .30, .99) both;
+  animation-delay: 1.5s;
 }
 
 h1 + p {
@@ -95,6 +102,34 @@ h1 + p {
   line-height: 35px;
   font-weight: normal;
   padding-top: 12px;
+}
+
+h1.slide-in {
+  animation: slideIn 0.9s cubic-bezier(.77, .01, .31, .99) 0.6s both;
+}
+
+p.slide-in {
+  animation: slideIn 0.7s cubic-bezier(.77, .01, .31, .99) 1.1s both;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underlineAnim {
+  0% {
+    background-size: 0% 0.3em;
+  }
+  100% {
+    background-size: 100% 0.3em;
+  }
 }
 
 strong, em {

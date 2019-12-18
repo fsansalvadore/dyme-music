@@ -16,6 +16,10 @@
     <%= stylesheet_link_tag "site" %>
   </head>
   <body class="body-menu">
+    <div class="page-loader">
+      <img src="/images/logo_DYME_MusicAgency.png" alt="">
+      <hr>
+    </div>
     <%= partial "partials/nav" %>
     <img id="bg-hp-img" src="/images/bg_violin.jpg" alt="Violino illuminato in acqua">
     <main>
@@ -29,6 +33,7 @@
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" ></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <%= javascript_include_tag "site" %>
     <script>
     var swiper = new Swiper('.swiper-container', {

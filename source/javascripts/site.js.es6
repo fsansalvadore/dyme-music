@@ -1,4 +1,12 @@
 //= require babel/polyfill
+window.addEventListener('load', (event) => {
+  setTimeout(() => {
+    document.querySelector(".page-loader").classList.add("loaderOut");
+    setTimeout(() => {
+      document.querySelector(".page-loader").remove();
+    }, 400);
+  }, 200);
+});
 
 $(document).ready(function() {
     $("a.smooth-scroll").on('click', function(event) {
@@ -13,6 +21,7 @@ $(document).ready(function() {
     });
     $('select').formSelect();
 });
+
 $(document).on("scroll", function() {
     var scrollDistance = $(window).scrollTop();
     if (scrollDistance > 400) {
