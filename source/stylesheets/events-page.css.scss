@@ -189,17 +189,6 @@ url("/images/cerimony_alternatives.jpg");
 }
 
 @media only screen and (min-width: 600px) {
-  .return-btn {
-    display: block;
-    position: relative;
-    margin-left: 40px;
-    z-index: 99;
-
-      a {
-        z-index: 999;
-      }
-    }
-
   .song-list {
     display: flex;
   }
@@ -220,5 +209,18 @@ url("/images/cerimony_alternatives.jpg");
 
   .page-intro-text {
     column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+ .return-btn {
+    display: block;
+    position: relative;
+    margin-left: 40px;
+    z-index: 99;
+
+    a {
+      z-index: 999;
+    }
   }
 }
