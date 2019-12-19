@@ -8,8 +8,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Suca" %></title>
-    <meta name="description" content='<%= current_page.data.description || "DYME | Design Your Music Event" %>'>
+    <title><%= current_page.data.title || "DYME | Design Your Music Event" %></title>
+    <meta name="description" content='<%= current_page.data.description || "La scelta giusta dove è richiesta una performance musicale di alto livello." %>'>
+    <%= partial 'partials/meta-social' %>
     <%= partial 'partials/favicon' %>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -33,7 +34,6 @@
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" ></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <%= javascript_include_tag "site" %>
     <script>
     var swiper = new Swiper('.swiper-container', {

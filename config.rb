@@ -22,6 +22,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/weddings/*', layout: 'eventspage'
 page '/events/*', layout: 'eventspage'
+page '/extra-services/*', layout: 'eventspage'
+page '/privacy.html', layout: 'eventspage'
 page '/request/*', layout: 'form'
 page '/not_found.html', layout: 'error'
 page '/internal_server_error.html', layout: 'error'
@@ -65,7 +67,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  config[:host] = "http://www.dyme-music.com"
+  config[:host] = "https://www.dyme-music.com"
 end
 
 activate :s3_sync do |s3|
