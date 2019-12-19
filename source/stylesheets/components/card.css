@@ -262,6 +262,10 @@
   align-items: center;
 }
 
+.card-contact-phone a, .card-contact-phone p {
+  color: var(--secondary-accent) !important;
+}
+
 .contact-phone-circle {
   width: 35px;
   height: 35px;
