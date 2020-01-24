@@ -1,6 +1,6 @@
 <?php
 $errors = '';
-$myemail = 'f.sansalvadore@gmail.com';//<-----Put Your email address here.
+$myemail = 'dyme.music@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  ||
    empty($_POST['lastname'])  ||
    empty($_POST['email']) ||
