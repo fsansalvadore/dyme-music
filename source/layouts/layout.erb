@@ -36,27 +36,33 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <%= javascript_include_tag "site" %>
     <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      spaceBetween: 10,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 60,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }
+    $(document).ready(function() {
+      setTimeout(function() {
+
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 10,
+          modifier: 1,
+          slideShadows : true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+         navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      });}, 300);
+
     });
   </script>
   </body>
