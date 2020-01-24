@@ -4,7 +4,9 @@ $myemail = 'dyme.music@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  ||
    empty($_POST['lastname'])  ||
    empty($_POST['email']) ||
-   empty($_POST['tipologia']))
+   empty($_POST['message']) ||
+   empty($_POST['region']) ||
+   empty($_POST['genre']))
 {
     $errors .= "\n Error: all fields are required";
 }
