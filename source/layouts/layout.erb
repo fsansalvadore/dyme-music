@@ -10,10 +10,12 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "DYME | Design Your Music Event" %></title>
     <meta name="description" content='<%= current_page.data.description || "La scelta giusta dove è richiesta una performance musicale di alto livello." %>'>
+    <base href="/">
     <%= partial 'partials/meta-social' %>
     <%= partial 'partials/favicon' %>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <%= stylesheet_link_tag "site" %>
   </head>
   <body class="body-menu">
@@ -33,7 +35,8 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" ></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <%= javascript_include_tag "site" %>
     <script>
     $(document).ready(function() {
