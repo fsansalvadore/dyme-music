@@ -7,7 +7,7 @@ They needed a simple yet beautifull website that would convey their style and gi
 
 ![Dyme website animated preview](https://www.fsansalvadore.com/assets/Dyme_preview.gif)
 
-## Techologies  
+## Technologies  
 
 - HTML5
 - SCSS
