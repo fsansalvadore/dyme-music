@@ -9,7 +9,7 @@ They needed a simple yet beautifull website that would convey their style and gi
 
 ## Techologies  
 
-- Html
-- Css
+- HTML5
+- SCSS
 - Ruby
 - Middleman (static site generator)
