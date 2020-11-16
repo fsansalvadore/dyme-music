@@ -1,7 +1,7 @@
 # DYME Website
 
 DYME, short for Design Your Music Event, is a team of professional musicians who play for every kind of events, from weddings to business parties.
-They needed a simple yet beautifull website that would convey their style and give them an elegant touch.
+They needed a simple yet beautifull website that would convey their style and give them an elegant online touchpoint.
 
 [Live preview](https://www.dyme-music.com/)
 
