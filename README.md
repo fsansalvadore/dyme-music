@@ -5,12 +5,11 @@ They needed a simple yet beautifull website that would convey their style and gi
 
 [Live preview](https://www.dyme-music.com/)
 
+![Dyme website animated preview](https://www.fsansalvadore.com/assets/Dyme_preview.gif)
+
 ## Techologies  
 
 - Html
 - Css
 - Ruby
 - Middleman (static site generator)
-
-
-![Dyme website animated preview](https://www.fsansalvadore.com/assets/Dyme_preview.gif)
