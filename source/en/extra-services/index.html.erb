@@ -1,0 +1,38 @@
+---
+title: "Extra Services | DYME Music Agency"
+description: "DYME mette a vostra disposizione numerosi"
+---
+<%= partial(:'partials/page-header', :locals => {
+  :urlRoot => "en/",
+  :backBtn => "RETURN TO THE HOME PAGE",
+  :cta => "REQUEST A QUOTE",
+  :h1 => "EXTRA SERVICES",
+  :category => "EXTRA",
+  :subheadline => "",
+  :img_url => "/images/extra-services_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>Passion, creativity and elegance are the assets DYME provides to
+make your day unforgettable. If you desire a DJ set or a Party Band with a
+professional <em>sound system and lights</em> capable of transforming your wedding venue,
+DYME is just what you need.
+<br><br>
+A <em>creative and experienced staff</em> will work with you so that everything is set up as you have always wanted it.</p>
+    <br>
+    <p>DYME offers you many other services. Are you thinking of a grand piano for your
+event? Do you need a <em>chaperone</em> to take care of children during the day? DYME
+offers these services to satisfy your wishes.</p>"
+}) %>
+<%= partial(:'partials/formation-section', :locals => {
+  :title => "Additional services",
+  :list_a => {
+    :a1 => "AUDIO AMPLIFICATION SYSTEMS",
+    :a2 => "DISCO AND SPECTACLE LIGHTING",
+    :a3 => "UPRIGHT PIANO"
+  },
+  :list_b => {
+    :b1 => "GRAND PIANO",
+    :b2 => "CHILD CARE"
+  }
+}) %>
+<%= partial(:'partials/contact-section-en') %>

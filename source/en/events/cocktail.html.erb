@@ -1,0 +1,45 @@
+---
+title: "Cocktail | Events | DYME Music Agency"
+description: "Personalize your cocktail event with the most suitable music."
+---
+<%= partial(:'partials/page-header', :locals => {
+  :urlRoot => "en/",
+  :backBtn => "RETURN TO THE HOME PAGE",
+  :cta => "REQUEST A QUOTE",
+  :h1 => "COCKTAIL",
+  :category => "EVENTS",
+  :subheadline => "Personalize your cocktail event with the most suitable music",
+  :img_url => "/images/cocktail_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>What kind of cocktail party would it be without some music? What
+can be considered a simple detail instead becomes a very important element for the
+success of your cocktail party. Guests do not come to attend a concert, the music
+must be almost imperceptible: a <em>pleasant soundtrack</em> of the evening.
+<br><br>
+Obviously the type of evening will guide you directly in choosing the
+appropriate music, but we can still give general suggestions useful for any occasion.
+A tip is to follow a precise order, avoiding changing genres and musical styles: the
+evening must be a crescendo, and our professional musicians know exactly how to
+make it happen.
+</p>"
+}) %>
+<%= partial(:'partials/formation-section', :locals => {
+  :title => "Ensembles",
+  :list_a => {
+    :a1 => "PIANO",
+    :a2 => "PIANO AND VIOLIN",
+    :a3 => "HARP AND VIOLIN",
+    :a4 => "PIANO AND VOCALIST",
+    :a5 => "JAZZ DUO/TRIO",
+    :a6 => "PIANO VIOLIN AND VOCALIST"
+  },
+  :list_b => {
+    :b1 => "STRING TRIO",
+    :b2 => "STRING QUARTET",
+    :b3 => "PIANOBAR",
+    :b4 => "DJ-SET",
+    :b5 => "DJ - SET AND EMCEE"
+  }
+}) %>
+<%= partial(:'partials/contact-section-en') %>

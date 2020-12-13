@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
   <head>
     <%= partial 'partials/google-analytics' %>
     <meta charset="utf-8">
@@ -7,27 +7,28 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Error | DYME" %></title>
+    <title><%= current_page.data.title || "Event | DYME" %></title>
     <meta name="description" content='<%= current_page.data.description || "DYME | Design Your Music Event" %>'>
     <%= partial 'partials/favicon' %>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
   </head>
-  <body>
+  <body class="body-menu">
     <div class="page-loader">
       <img src="/images/logo_DYME_MusicAgency.png" alt="">
       <hr>
     </div>
-    <div class="error-page">
-      <main>
-        <%= yield %>
-      </main>
-    </div>
+    <%= partial "partials/nav-2-en" %>
+    <main>
+      <%= yield %>
+      <%= partial 'partials/awards' %>
+      <%= partial 'partials/footer-en' %>
+    </main>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <%= javascript_include_tag "site" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" ></script>
   </body>
 </html>

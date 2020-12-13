@@ -1,0 +1,50 @@
+---
+title: "Party | Weddings | DYME Music Agency"
+description: "Let loose with your guests"
+---
+<%= partial(:'partials/page-header', :locals => {
+  :urlRoot => "en/",
+  :backBtn => "RETURN TO THE HOME PAGE",
+  :cta => "REQUEST A QUOTE",
+  :h1 => "PARTY",
+  :category => "WEDDINGS",
+  :subheadline => "Let loose with your guests",
+  :img_url => "/images/party_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>At the end of the reception you deserve <em>some rest</em>: it’s now time to
+have fun and let loose with your guests.
+<br><br>
+The choice of music is important for determining the character of the
+entertainment you want to offer your guests, encouraging them to
+indulge in wild dances and funny traditions, or inviting them to sip on a
+good “amaro” liqueur with a relaxing background.
+<br><br>
+The <em>DJ set</em> is the right option for those who want to go wild with
+friends with the most current popular hits and group dances. DYME
+DJs <em>customize the playlist</em> according to the requests of the spouses.
+<br><br>
+For soft entertainment, Dyme offers the best of <em>Jazz music</em>, from
+BeBop to Free Jazz to Swing. Jazz lends itself perfectly to the most
+varied contexts creating a refined background and engaging
+entertainment suitable for an elegant evening.
+<br><br>
+For the more alternative couples: our <em>Party Band</em>. Offering a wide
+repertoire that goes from rock, rock and roll, pop, blues, to disco and
+funk, the Party Band is the ideal ensemble to <em>amaze your guests</em> in
+the name of music and fun.</p>"
+}) %>
+<%= partial(:'partials/formation-section', :locals => {
+  :title => "Ensembles",
+  :list_a => {
+    :a1 => "PIANOBAR",
+    :a2 => "PIANO AND VOCALIST",
+    :a5 => "JAZZ DUO/TRIO"
+  },
+  :list_b => {
+    :b1 => "PARTY BAND",
+    :b4 => "DJ-SET",
+    :b5 => "DJ - SET AND EMCEE"
+  }
+}) %>
+<%= partial(:'partials/contact-section-en') %>

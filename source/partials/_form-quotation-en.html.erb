@@ -1,0 +1,86 @@
+<div class="form-container">
+  <div class="row">
+    <form method="post" action="send_quotation_en.php" class="col s12">
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="name" name="name" type="text" class="validate" required>
+          <label for="name">Name *</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="business" name="business" type="text" class="validate">
+          <label for="business">Company</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="email" name="email" type="email" class="validate" required>
+          <label for="email">Email *</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="tel" name="tel" type="tel" class="validate">
+          <label for="tel">Telephone</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <select name="tipologia" required>
+            <option value="" disabled selected>Select an event type</option>
+            <option value="Anniversario">Anniversary</option>
+            <option value="Aperitivo">Cocktail Hour</option>
+            <option value="Cerimonia">Ceremony</option>
+            <option value="Party">Party</option>
+            <option value="Cocktail">Cocktail</option>
+            <option value="Aziendale">Corporate</option>
+            <option value="Servizi-Extra">Extra Services</option>
+          </select>
+          <label>Type of event *</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <select name="formation">
+            <option value="" disabled selected>Choose an ensemble</option>
+            <option value="Arpa-violino">Harp and violin</option>
+            <option value="Arpa-flauto">Harp and flute e flauto</option>
+            <option value="DJ-Set">DJ Set</option>
+            <option value="DJ-Set-vocalist">DJ Set and Emcee</option>
+            <option value="Duo-trio-jazz">Jazz Duo/trio</option>
+            <option value="Pianobar">Pianobar</option>
+            <option value="Pianoforte-solo">Piano</option>
+            <option value="Pianoforte-cantante">Piano and vocalist</option>
+            <option value="Pianoforte-violino-cantante">Piano, violin and vocalist</option>
+            <option value="Pianoforte-trio-archi">Piano and string trio</option>
+            <option value="Trio-pianoforte-violino-voce">Piano, violin and vocalist trio</option>
+            <option value="Trio-archi">String trio</option>
+            <option value="Quartetto-archi">String quartet</option>
+            <option value="Organo">Organ</option>
+            <option value="Party-band">Party band</option>
+          </select>
+          <label>Ensemble requested</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Message, Budget, Timing, etc...</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="altro" name="altro" class="materialize-textarea"></textarea>
+          <label for="altro">Other</label>
+        </div>
+      </div>
+      <div class="disclaimer">
+        <div>
+          <label class="switch">
+            <input type="checkbox" required>
+            <span>I agree to the <a href="<%= config[:host] %>/en/privacy.html"><u>handling of my data</u></a>. *</span>
+          </label>
+          <p>* Mandatory fields</p>
+        </div>
+        <div>
+          <button type="submit" value="Invia Preventivo" class="btn-submit-quotation">SEND</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

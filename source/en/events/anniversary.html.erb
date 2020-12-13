@@ -1,0 +1,52 @@
+---
+title: "Anniversario | Events | DYME Music Agency"
+description: "Make it a day to remember"
+---
+<%= partial(:'partials/page-header', :locals => {
+  :urlRoot => "en/",
+  :backBtn => "RETURN TO THE HOME PAGE",
+  :cta => "REQUEST A QUOTE",
+  :h1 => "ANNIVERSARY",
+  :category => "EVENTS",
+  :subheadline => "Make it a day to remember",
+  :img_url => "/images/anniversary_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>Wedding anniversaries, 18th birthdays, and baptisms are just some
+of the <em>most important moments</em> of our lives. Why not highlight these moments with
+the right soundtrack?
+<br><br>
+Music plays a fundamental role in accompanying the <em>happy memory</em> of a special day.
+Trust the experience of DYME musicians, they will be able to advise and guide you in
+the ideal choice to accompany your celebrations. <em>Any song is suitable</em> if it is the one
+that touches you.</p>
+<br>
+<p>We take care of every detail, allowing you not to think about anything. Our attention and professionalism are at your disposal for:</p>
+<br><br>
+<ul>
+  <li>Music <em>arrangement</em></li>
+  <li>Personalized original <em>music compositions</em></li>
+  <li>Venue <em>walk-through</em></li>
+  <li>Study of the most suitable <em>musical solution</em> for the event</li>
+</ul>
+</p>"
+}) %>
+<%= partial(:'partials/formation-section', :locals => {
+  :title => "Ensembles",
+  :list_a => {
+    :a1 => "PIANO",
+    :a2 => "PIANO AND VIOLIN",
+    :a3 => "HARP AND VIOLIN",
+    :a4 => "PIANO AND VOCALIST",
+    :a5 => "JAZZ DUO/TRIO",
+    :a6 => "PIANO VIOLIN AND VOCALIST"
+  },
+  :list_b => {
+    :b1 => "STRING TRIO",
+    :b2 => "STRING QUARTET",
+    :b3 => "PIANOBAR",
+    :b4 => "DJ-SET",
+    :b5 => "DJ - SET AND EMCEE"
+  }
+}) %>
+<%= partial(:'partials/contact-section-en') %>

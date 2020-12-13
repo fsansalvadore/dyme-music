@@ -1,0 +1,35 @@
+---
+title: "Collaborate with us | DYME Music Agency"
+description: "Would you like to collaborate with us? Tell us about yourself."
+---
+
+<div class="top-page-btns">
+  <div class="return-btn">
+    <a href="<%= config[:host] %>/en/" class="home-link"><span class="left-arrow arrow-card"></span> RETURN TO THE HOME PAGE</a>
+  </div>
+</div>
+<div class="form-top-bg">
+</div>
+<div id="form-main-container">
+  <div class="form-logo-container">
+    <a href="<%= config[:host] %>/">
+      <img src="/images/logo_DYME_MusicAgency.png" alt="">
+    </a>
+  </div>
+  <div class="form-title-container">
+    <div class="form-category">
+      <a href="<%= config[:host] %>/"><p>DYME</p></a><p>Are you a musician?</p>
+    </div>
+    <div class="form-title">
+      <h1><span class="underline">Collaborate with us</span></h1>
+      <p class="page-paragraph">Fill out the form below and send us your material.<br>
+        You can always reach out to us via email at <a href="mailto:dyme.music@gmail.com" target="_blank" class="email-form-link">dyme.music@gmail.com</a> or by calling the following numbers:
+      </p>
+      <p class="page-paragraph">
+        <span>Lorenzo <a href="tel:+393934857805"><em>+39 393 485 7805</em></a></span>
+        <span>Davide <a href="tel:+393401775252"><em>+39 340 177 5252</em></a></span>
+      </p>
+    </div>
+    <%= partial(:'partials/form-collaborate-en') %>
+  </div>
+</div>

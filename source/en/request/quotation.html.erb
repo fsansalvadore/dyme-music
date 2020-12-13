@@ -1,0 +1,35 @@
+---
+title: "Quotation | DYME Music Agency"
+description: "Request a quote for your event."
+---
+
+<div class="top-page-btns">
+  <div class="return-btn">
+    <a href="<%= config[:host] %>/en/" class="home-link"><span class="left-arrow arrow-card"></span> RETURN TO THE HOME PAGE</a>
+  </div>
+</div>
+<div class="form-top-bg">
+</div>
+<div id="form-main-container">
+  <div class="form-logo-container">
+    <a href="<%= config[:host] %>/">
+      <img src="/images/logo_DYME_MusicAgency.png" alt="">
+    </a>
+  </div>
+  <div class="form-title-container">
+    <div class="form-category">
+      <a href="<%= config[:host] %>/"><p>DYME</p></a><p>Request a quote</p>
+    </div>
+    <div class="form-title">
+      <h1><span class="underline">Let us know how we can help you</span></h1>
+      <p class="page-paragraph">Fill out the form below to request a quote or for more information.<br>
+You can always reach out to us via email at <a href="mailto:dyme.music@gmail.com" target="_blank" class="email-form-link">dyme.music@gmail.com</a> or by calling the following numbers:
+      </p>
+      <p class="page-paragraph">
+        <span>Lorenzo <a href="tel:+393934857805"><em>+39 393 485 7805</em></a></span>
+        <span>Davide <a href="tel:+393401775252"><em>+39 340 177 5252</em></a></span>
+      </p>
+    </div>
+    <%= partial(:'partials/form-quotation-en') %>
+  </div>
+</div>

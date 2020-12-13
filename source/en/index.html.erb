@@ -6,130 +6,133 @@ description: "DYME è la scelta giusta dove è richiesta una performance musical
       <div id="logo-group">
         <img src="/images/logo_DYME_MusicAgency.png" alt="DYME Music Agency">
         <div id="main-title-group">
-          <h1 class="slide-in"><span class="underlineAnim">Progetta la tua musica con noi</span></h1>
-          <p class="slide-in">Siamo un team di <strong>musicisti professionisti</strong> capaci di trovare soluzioni musicali adatte ad ogni occasione.</p>
+          <h1 class="slide-in"><span class="underlineAnim">Design your music with us</span></h1>
+          <p class="slide-in">We’re a team of <strong>professional musicians</strong> experienced in finding musical solutions suitable for every occasion.</p>
         </div>
       </div>
     </div>
     <section class="business-unit-section">
         <%= partial(:'partials/card-big', :locals => {
-          :cardTitle => "MATRIMONI",
+          :cardTitle => "WEDDINGS",
           :id => "card-weddings",
           :ancorUrl => "#weddings",
           :listItem1 => {
-            :text => "CERIMONIA",
-            :url => "/weddings/cerimonia.html"
+            :text => "CEREMONY",
+            :url => "/en/weddings/ceremony.html"
           },
           :listItem2 => {
-            :text => "APERITIVO",
-            :url => "/weddings/aperitivo.html"
+            :text => "COCKTAIL HOUR",
+            :url => "/en/weddings/cocktail-hour.html"
           },
           :listItem3 => {
             :text => "PARTY",
-            :url => "/weddings/party.html"
+            :url => "/en/weddings/party.html"
           }
         }) %>
         <%= partial(:'partials/card-big', :locals => {
-          :cardTitle => "EVENTI",
+          :cardTitle => "EVENTS",
           :id => "card-events",
           :ancorUrl => "#events",
           :listItem1 => {
             :text => "COCKTAIL",
-            :url => "/events/cocktail.html"
+            :url => "/en/events/cocktail.html"
           },
           :listItem2 => {
-            :text => "AZIENDALE",
-            :url => "/events/aziendale.html"
+            :text => "CORPORATE",
+            :url => "/en/events/corporate.html"
           },
           :listItem3 => {
-            :text => "ANNIVERSARIO",
-            :url => "/events/anniversario.html"
+            :text => "ANNIVERSARY",
+            :url => "/en/events/anniversary.html"
           }
         }) %>
-        <%= partial(:'partials/card-horiz', :locals => {
-          :cardTitle => "SERVIZI EXTRA",
+        <%= partial(:'partials/card-horiz-en', :locals => {
+          :cardTitle => "ADDITIONAL SERVICES",
           :id => "card-extra-services",
           :listItem1 => {
-            :text => "ANIMAZIONE BAMBINI",
-            :url => "/extra-services/index.html"
+            :text => "CHILD CARE",
+            :url => "/en/extra-services/index.html"
           },
           :listItem2 => {
-            :text => "IMPIANTI AUDIO",
-            :url => "/extra-services/index.html"
+            :text => "AUDIO EQUIPMENT",
+            :url => "/en/extra-services/index.html"
           },
           :listItem3 => {
-            :text => "IMPIANTI LUCI",
-            :url => "/extra-services/index.html"
+            :text => "LIGHT EQUIPMENT",
+            :url => "/en/extra-services/index.html"
           }
         }) %>
     </section>
     <section id="weddings" class="business-unit-section page-section">
       <div class="bg-section-img"></div>
-      <h2><span class="underline">MATRIMONI</span></h2>
-      <p>State organizzando un <em>Matrimonio</em>? Sei romantica e sei alla ricerca della giusta <em>colonna sonora</em> che ti accompagni all’altare? Sei un tipo energico e vuoi dare alla tua cerimonia un <em>tocco di vivacità</em>? Decidete insieme a noi <em>la musica piú adatta per il vostro giorno più importante</em>!</p>
+      <h2><span class="underline">WEDDINGS</span></h2>
+      <p>Are you planning a <em>wedding</em>? Are you the romantic type looking for
+just the <em>right music</em> to walk down the aisle to? Are you the spirited type
+wanting to give your ceremony that <em>touch of liveliness</em>?
+Let us help you decide on the <em>perfect music for your big day</em>!</p>
       <div class="card-container">
         <%= partial(:'partials/card-single', :locals => {
-            :cta => "SCOPRI DI PIÙ",
-            :cardTitle => "CERIMONIA",
+            :cta => "FIND OUT MORE",
+            :cardTitle => "CEREMONY",
             :id => "card-cerimony",
             :bgImg => "/images/cerimonies_preview.jpg",
-            :text => "Rendi indimenticabile il tuo giorno più importante",
-            :url => "/weddings/cerimonia.html"
+            :text => "Make your special day unforgettable",
+            :url => "/en/weddings/ceremony.html"
           }) %>
         <%= partial(:'partials/card-single', :locals => {
-            :cta => "SCOPRI DI PIÙ",
-            :cardTitle => "APERITIVO",
+            :cta => "FIND OUT MORE",
+            :cardTitle => "COCKTAIL HOUR",
             :id => "card-aperitif",
             :bgImg => "/images/aperitif_preview.jpg",
-            :text => "L’aperitivo merita la giusta colonna sonora",
-            :url => "/weddings/aperitivo.html"
+            :text => "Cocktail hour deserves its own sound",
+            :url => "/en/weddings/cocktail-hour.html"
           }) %>
         <%= partial(:'partials/card-single', :locals => {
-            :cta => "SCOPRI DI PIÙ",
+            :cta => "FIND OUT MORE",
             :cardTitle => "PARTY",
             :id => "card-party",
             :bgImg => "/images/party_preview.jpg",
-            :text => "Scatenati con i tuoi invitati",
-            :url => "/weddings/party.html"
+            :text => "Let loose with your guests",
+            :url => "/en/weddings/party.html"
           }) %>
       </div>
     </section>
     <section id="events" class="page-section">
       <div class="bg-section-img"></div>
-      <h2><span class="underline">EVENTI</span></h2>
-      <p>Stai organizzando un <em>Evento</em>?<br>
-      La scelta dell’intrattenimento musicale è ciò che fa la differenza, affida il tuo evento a DYME MUSIC!
+      <h2><span class="underline">EVENTS</span></h2>
+      <p>Are you organizing an <em>event</em>?<br>
+      The choice of music entertainment can make all the difference: let DYME MUSIC handle it!
       </p>
       <div class="card-container">
         <%= partial(:'partials/card-single', :locals => {
-            :cta => "SCOPRI DI PIÙ",
+            :cta => "FIND OUT MORE",
             :cardTitle => "COCKTAIL",
             :id => "card-cocktail",
             :bgImg => "/images/cocktail_preview.jpg",
-            :text => "Personalizza il tuo cocktail con la musica più adatta",
-            :url => "/events/cocktail.html"
+            :text => "Personalize your event with a unique sound",
+            :url => "/en/events/cocktail.html"
           }) %>
         <%= partial(:'partials/card-single', :locals => {
-            :cta => "SCOPRI DI PIÙ",
-            :cardTitle => "AZIENDALE",
+            :cta => "FIND OUT MORE",
+            :cardTitle => "CORPORATE",
             :id => "card-business",
             :bgImg => "/images/business_preview.jpg",
-            :text => "Stupisci tutti con la giusta musica",
-            :url => "/events/aziendale.html"
+            :text => "Impress everyone with the right music",
+            :url => "/en/events/corporate.html"
           }) %>
         <%= partial(:'partials/card-single', :locals => {
-            :cta => "SCOPRI DI PIÙ",
-            :cardTitle => "ANNIVERSARIO",
+            :cta => "FIND OUT MORE",
+            :cardTitle => "ANNIVERSARY",
             :id => "card-anniversary",
             :bgImg => "/images/anniversary_preview.jpg",
-            :text => "Rendi memorabile un giorno importante",
-            :url => "/events/anniversario.html"
+            :text => "Make it a day to remember",
+            :url => "/en/events/anniversary.html"
           }) %>
       </div>
     </section>
     <section id="gallery" class="page-section">
       <h2><span class="underline">GALLERY</span></h2>
-      <p>La musica è un'immagine che puoi vedere anche a occhi chiusi.</p>
+      <p>Music is a picture you can see with your eyes closed.</p>
       <div class="gallery-container">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -167,12 +170,14 @@ description: "DYME è la scelta giusta dove è richiesta una performance musical
       </div>
     </section>
     <section id="chi-siamo" class="page-section">
-      <h2><span class="underline">CHI SIAMO</span></h2>
-      <p>Un team di artisti, curiosi, creativi e entusiasti, determinato a migliorare la qualità dell’intrattenimento del tuo evento, rendendo finalmente semplice ed economica la scelta della musica!</p>
+      <h2><span class="underline">WHO WE ARE</span></h2>
+      <p>A team of curious, creative and enthusiastic artists determined to improve
+the entertainment quality of your event, once and for all making your choice of
+music simple and economical!</p>
       <!-- <img id="map" src="/images/map.jpg" alt="Mappa di dove lavoriamo."> -->
     </section>
     <section id="contacts" class="page-section">
-      <h2><span class="underline">CONTATTI</span></h2>
+      <h2><span class="underline">CONTACT US</span></h2>
       <div id="social-contacts">
         <div class="social-btns">
           <a href="https://www.facebook.com/DesignYourMusicEvents/" target="_blank"><img src="/images/logo_facebook.svg" alt="facebook"></a>

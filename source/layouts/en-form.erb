@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
   <head>
     <%= partial 'partials/google-analytics' %>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Error | DYME" %></title>
+    <title><%= current_page.data.title || "Form | DYME" %></title>
     <meta name="description" content='<%= current_page.data.description || "DYME | Design Your Music Event" %>'>
     <%= partial 'partials/favicon' %>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
@@ -18,9 +18,10 @@
       <img src="/images/logo_DYME_MusicAgency.png" alt="">
       <hr>
     </div>
-    <div class="error-page">
+    <div class="form-page">
       <main>
         <%= yield %>
+        <%= partial 'partials/footer-en' %>
       </main>
     </div>
     <script

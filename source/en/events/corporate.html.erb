@@ -1,0 +1,52 @@
+---
+title: "Corporate | Events | DYME Music Agency"
+description: "Impress everyone with the right music"
+---
+<%= partial(:'partials/page-header', :locals => {
+  :urlRoot => "en/",
+  :backBtn => "RETURN TO THE HOME PAGE",
+  :cta => "REQUEST A QUOTE",
+  :h1 => "CORPORATE",
+  :category => "EVENTS",
+  :subheadline => "Impress everyone with the right music",
+  :img_url => "/images/business_header.jpg"
+} ) %>
+<%= partial(:'partials/page-intro-paragraph', :locals => {
+  :content => "<p>Attention to detail and quality is our business card in terms of <em>music for
+corporate events</em>. With years of experience in the field, we design and
+manage the event for our customers at 360°.
+<br><br>
+Meetings, conferences, corporate meetings, team building, trade fairs and the
+launch of a new product, are all important events for corporate
+communication, events where <em>music cannot be missed</em>.</p>
+<p>We take care of every detail, allowing you not to think about anything. Our
+attention and professionalism are at your disposal for:
+<br><br>
+<ul>
+  <li><em>Management</em> of music and musicians</li>
+  <li>Study of the most <em>suitable musical solution</em> for the event</li>
+  <li>Study of <em>light solutions</em></li>
+  <li>Amplification and sound management</li>
+  <li><em>Audio system</em> rental</li>
+</ul>
+</p>"
+}) %>
+<%= partial(:'partials/formation-section', :locals => {
+  :title => "Ensembles",
+  :list_a => {
+    :a1 => "PIANO",
+    :a2 => "PIANO AND VIOLIN",
+    :a3 => "HARP AND VIOLIN",
+    :a4 => "PIANO AND VOCALIST",
+    :a5 => "JAZZ DUO/TRIO",
+    :a6 => "PIANO VIOLIN AND VOCALIST"
+  },
+  :list_b => {
+    :b1 => "STRING TRIO",
+    :b2 => "STRING QUARTET",
+    :b3 => "PIANOBAR",
+    :b4 => "DJ-SET",
+    :b5 => "DJ - SET AND EMCEE"
+  }
+}) %>
+<%= partial(:'partials/contact-section-en') %>
